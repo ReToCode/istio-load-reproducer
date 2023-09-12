@@ -1,0 +1,49 @@
+load-test-2z5cm Requests      [total, rate, throughput]         60238, 6000.27, 5940.76
+load-test-2z5cm Duration      [total, attack, wait]             10.14s, 10.039s, 100.571ms
+load-test-2z5cm Latencies     [min, mean, 50, 90, 95, 99, max]  100.091ms, 102.657ms, 101.082ms, 101.916ms, 110.261ms, 139.652ms, 210.38ms
+load-test-2z5cm Bytes In      [total, mean]                     1867378, 31.00
+load-test-2z5cm Bytes Out     [total, mean]                     0, 0.00
+load-test-2z5cm Success       [ratio]                           100.00%
+load-test-2z5cm Status Codes  [code:count]                      200:60238
+load-test-2z5cm Error Set:
+load-test-2z5cm Requests      [total, rate, throughput]         120239, 6000.12, 5970.10
+load-test-2z5cm Duration      [total, attack, wait]             20.14s, 20.039s, 100.765ms
+load-test-2z5cm Latencies     [min, mean, 50, 90, 95, 99, max]  100.091ms, 102.693ms, 101.065ms, 101.797ms, 108.599ms, 128.836ms, 351.142ms
+load-test-2z5cm Bytes In      [total, mean]                     3727409, 31.00
+load-test-2z5cm Bytes Out     [total, mean]                     0, 0.00
+load-test-2z5cm Success       [ratio]                           100.00%
+load-test-2z5cm Status Codes  [code:count]                      200:120239
+load-test-2z5cm Error Set:
+load-test-2z5cm Requests      [total, rate, throughput]         180237, 6000.07, 5980.04
+load-test-2z5cm Duration      [total, attack, wait]             30.14s, 30.039s, 100.646ms
+load-test-2z5cm Latencies     [min, mean, 50, 90, 95, 99, max]  100.09ms, 102.36ms, 101.054ms, 101.759ms, 107.774ms, 123.57ms, 351.142ms
+load-test-2z5cm Bytes In      [total, mean]                     5587347, 31.00
+load-test-2z5cm Bytes Out     [total, mean]                     0, 0.00
+load-test-2z5cm Success       [ratio]                           100.00%
+load-test-2z5cm Status Codes  [code:count]                      200:180237
+load-test-2z5cm Error Set:
+load-test-2z5cm Requests      [total, rate, throughput]         240243, 6000.09, 5985.10
+load-test-2z5cm Duration      [total, attack, wait]             40.14s, 40.04s, 100.238ms
+load-test-2z5cm Latencies     [min, mean, 50, 90, 95, 99, max]  100.09ms, 102.443ms, 101.062ms, 101.832ms, 108.673ms, 124.756ms, 351.142ms
+load-test-2z5cm Bytes In      [total, mean]                     7447533, 31.00
+load-test-2z5cm Bytes Out     [total, mean]                     0, 0.00
+load-test-2z5cm Success       [ratio]                           100.00%
+load-test-2z5cm Status Codes  [code:count]                      200:240243
+load-test-2z5cm Error Set:
+load-test-2z5cm Requests      [total, rate, throughput]         300242, 6000.16, 5988.06
+load-test-2z5cm Duration      [total, attack, wait]             50.14s, 50.039s, 101.108ms
+load-test-2z5cm Latencies     [min, mean, 50, 90, 95, 99, max]  100.09ms, 102.345ms, 101.063ms, 101.812ms, 108.574ms, 124.409ms, 351.142ms
+load-test-2z5cm Bytes In      [total, mean]                     9307502, 31.00
+load-test-2z5cm Bytes Out     [total, mean]                     0, 0.00
+load-test-2z5cm Success       [ratio]                           100.00%
+load-test-2z5cm Status Codes  [code:count]                      200:300242
+load-test-2z5cm Error Set:
+load-test-2z5cm Requests      [total, rate, throughput]         360001, 6000.09, 5989.99
+load-test-2z5cm Duration      [total, attack, wait]             1m0s, 59.999s, 101.093ms
+load-test-2z5cm Latencies     [min, mean, 50, 90, 95, 99, max]  100.09ms, 102.262ms, 101.062ms, 101.803ms, 108.415ms, 123.687ms, 351.142ms
+load-test-2z5cm Bytes In      [total, mean]                     11160031, 31.00
+load-test-2z5cm Bytes Out     [total, mean]                     0, 0.00
+load-test-2z5cm Success       [ratio]                           100.00%
+load-test-2z5cm Status Codes  [code:count]                      200:360001
+load-test-2z5cm Error Set:
+Stream closed EOF for demo/load-test-2z5cm (vegeta)

@@ -1,0 +1,56 @@
+stream logs failed container "vegeta" in pod "load-test-7wjw2" is waiting to start: ContainerCreating for demo/load-test-7wjw2 (vegeta)
+stream logs failed container "vegeta" in pod "load-test-7wjw2" is waiting to start: ContainerCreating for demo/load-test-7wjw2 (vegeta)
+stream logs failed container "vegeta" in pod "load-test-7wjw2" is waiting to start: ContainerCreating for demo/load-test-7wjw2 (vegeta)
+stream logs failed container "vegeta" in pod "load-test-7wjw2" is waiting to start: ContainerCreating for demo/load-test-7wjw2 (vegeta)
+stream logs failed container "vegeta" in pod "load-test-7wjw2" is waiting to start: ContainerCreating for demo/load-test-7wjw2 (vegeta)
+stream logs failed container "vegeta" in pod "load-test-7wjw2" is waiting to start: ContainerCreating for demo/load-test-7wjw2 (vegeta)
+stream logs failed container "vegeta" in pod "load-test-7wjw2" is waiting to start: ContainerCreating for demo/load-test-7wjw2 (vegeta)
+load-test-7wjw2 Requests      [total, rate, throughput]         10011, 1000.03, 990.06
+load-test-7wjw2 Duration      [total, attack, wait]             10.112s, 10.011s, 100.85ms
+load-test-7wjw2 Latencies     [min, mean, 50, 90, 95, 99, max]  100.124ms, 101.108ms, 101.074ms, 101.613ms, 101.702ms, 101.973ms, 110.982ms
+load-test-7wjw2 Bytes In      [total, mean]                     310341, 31.00
+load-test-7wjw2 Bytes Out     [total, mean]                     0, 0.00
+load-test-7wjw2 Success       [ratio]                           100.00%
+load-test-7wjw2 Status Codes  [code:count]                      200:10011
+load-test-7wjw2 Error Set:
+load-test-7wjw2 Requests      [total, rate, throughput]         20016, 1000.03, 995.02
+load-test-7wjw2 Duration      [total, attack, wait]             20.116s, 20.015s, 100.843ms
+load-test-7wjw2 Latencies     [min, mean, 50, 90, 95, 99, max]  100.121ms, 101.265ms, 101.069ms, 101.625ms, 101.716ms, 105.439ms, 182.136ms
+load-test-7wjw2 Bytes In      [total, mean]                     620496, 31.00
+load-test-7wjw2 Bytes Out     [total, mean]                     0, 0.00
+load-test-7wjw2 Success       [ratio]                           100.00%
+load-test-7wjw2 Status Codes  [code:count]                      200:20016
+load-test-7wjw2 Error Set:
+load-test-7wjw2 Requests      [total, rate, throughput]         30018, 1000.03, 996.67
+load-test-7wjw2 Duration      [total, attack, wait]             30.118s, 30.017s, 101.179ms
+load-test-7wjw2 Latencies     [min, mean, 50, 90, 95, 99, max]  100.116ms, 101.189ms, 101.051ms, 101.609ms, 101.702ms, 103.603ms, 182.136ms
+load-test-7wjw2 Bytes In      [total, mean]                     930558, 31.00
+load-test-7wjw2 Bytes Out     [total, mean]                     0, 0.00
+load-test-7wjw2 Success       [ratio]                           100.00%
+load-test-7wjw2 Status Codes  [code:count]                      200:30018
+load-test-7wjw2 Error Set:
+load-test-7wjw2 Requests      [total, rate, throughput]         40018, 1000.01, 997.49
+load-test-7wjw2 Duration      [total, attack, wait]             40.119s, 40.018s, 100.922ms
+load-test-7wjw2 Latencies     [min, mean, 50, 90, 95, 99, max]  100.116ms, 101.15ms, 101.04ms, 101.6ms, 101.694ms, 102.724ms, 182.136ms
+load-test-7wjw2 Bytes In      [total, mean]                     1240558, 31.00
+load-test-7wjw2 Bytes Out     [total, mean]                     0, 0.00
+load-test-7wjw2 Success       [ratio]                           100.00%
+load-test-7wjw2 Status Codes  [code:count]                      200:40018
+load-test-7wjw2 Error Set:
+load-test-7wjw2 Requests      [total, rate, throughput]         50015, 1000.00, 997.99
+load-test-7wjw2 Duration      [total, attack, wait]             50.116s, 50.015s, 100.867ms
+load-test-7wjw2 Latencies     [min, mean, 50, 90, 95, 99, max]  100.109ms, 101.127ms, 101.034ms, 101.595ms, 101.689ms, 102.234ms, 182.136ms
+load-test-7wjw2 Bytes In      [total, mean]                     1550465, 31.00
+load-test-7wjw2 Bytes Out     [total, mean]                     0, 0.00
+load-test-7wjw2 Success       [ratio]                           100.00%
+load-test-7wjw2 Status Codes  [code:count]                      200:50015
+load-test-7wjw2 Error Set:
+load-test-7wjw2 Requests      [total, rate, throughput]         60000, 1000.01, 998.33
+load-test-7wjw2 Duration      [total, attack, wait]             1m0s, 59.999s, 100.909ms
+load-test-7wjw2 Latencies     [min, mean, 50, 90, 95, 99, max]  100.109ms, 101.221ms, 101.033ms, 101.594ms, 101.689ms, 102.721ms, 255.94ms
+load-test-7wjw2 Bytes In      [total, mean]                     1860000, 31.00
+load-test-7wjw2 Bytes Out     [total, mean]                     0, 0.00
+load-test-7wjw2 Success       [ratio]                           100.00%
+load-test-7wjw2 Status Codes  [code:count]                      200:60000
+load-test-7wjw2 Error Set:
+Stream closed EOF for demo/load-test-7wjw2 (vegeta)

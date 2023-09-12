@@ -1,0 +1,51 @@
+stream logs failed container "vegeta" in pod "load-test-dzwn9" is waiting to start: ContainerCreating for demo/load-test-dzwn9 (vegeta)
+stream logs failed container "vegeta" in pod "load-test-dzwn9" is waiting to start: ContainerCreating for demo/load-test-dzwn9 (vegeta)
+load-test-dzwn9 Requests      [total, rate, throughput]         30026, 3000.05, 2970.17
+load-test-dzwn9 Duration      [total, attack, wait]             10.109s, 10.008s, 100.713ms
+load-test-dzwn9 Latencies     [min, mean, 50, 90, 95, 99, max]  100.097ms, 101.64ms, 101.07ms, 101.666ms, 102.113ms, 111.684ms, 216.94ms
+load-test-dzwn9 Bytes In      [total, mean]                     930806, 31.00
+load-test-dzwn9 Bytes Out     [total, mean]                     0, 0.00
+load-test-dzwn9 Success       [ratio]                           100.00%
+load-test-dzwn9 Status Codes  [code:count]                      200:30026
+load-test-dzwn9 Error Set:
+load-test-dzwn9 Requests      [total, rate, throughput]         60048, 3000.05, 2985.04
+load-test-dzwn9 Duration      [total, attack, wait]             20.116s, 20.016s, 100.634ms
+load-test-dzwn9 Latencies     [min, mean, 50, 90, 95, 99, max]  100.097ms, 101.37ms, 101.053ms, 101.633ms, 101.757ms, 107.297ms, 216.94ms
+load-test-dzwn9 Bytes In      [total, mean]                     1861488, 31.00
+load-test-dzwn9 Bytes Out     [total, mean]                     0, 0.00
+load-test-dzwn9 Success       [ratio]                           100.00%
+load-test-dzwn9 Status Codes  [code:count]                      200:60048
+load-test-dzwn9 Error Set:
+load-test-dzwn9 Requests      [total, rate, throughput]         90054, 3000.05, 2990.03
+load-test-dzwn9 Duration      [total, attack, wait]             30.118s, 30.017s, 100.556ms
+load-test-dzwn9 Latencies     [min, mean, 50, 90, 95, 99, max]  100.097ms, 101.281ms, 101.047ms, 101.622ms, 101.738ms, 106.057ms, 216.94ms
+load-test-dzwn9 Bytes In      [total, mean]                     2791674, 31.00
+load-test-dzwn9 Bytes Out     [total, mean]                     0, 0.00
+load-test-dzwn9 Success       [ratio]                           100.00%
+load-test-dzwn9 Status Codes  [code:count]                      200:90054
+load-test-dzwn9 Error Set:
+load-test-dzwn9 Requests      [total, rate, throughput]         120027, 2999.99, 2992.47
+load-test-dzwn9 Duration      [total, attack, wait]             40.11s, 40.009s, 100.489ms
+load-test-dzwn9 Latencies     [min, mean, 50, 90, 95, 99, max]  100.097ms, 101.234ms, 101.043ms, 101.615ms, 101.728ms, 105.425ms, 216.94ms
+load-test-dzwn9 Bytes In      [total, mean]                     3720837, 31.00
+load-test-dzwn9 Bytes Out     [total, mean]                     0, 0.00
+load-test-dzwn9 Success       [ratio]                           100.00%
+load-test-dzwn9 Status Codes  [code:count]                      200:120027
+load-test-dzwn9 Error Set:
+load-test-dzwn9 Requests      [total, rate, throughput]         149911, 2997.81, 2991.76
+load-test-dzwn9 Duration      [total, attack, wait]             50.108s, 50.007s, 101.111ms
+load-test-dzwn9 Latencies     [min, mean, 50, 90, 95, 99, max]  100.097ms, 101.213ms, 101.039ms, 101.612ms, 101.727ms, 105.254ms, 216.94ms
+load-test-dzwn9 Bytes In      [total, mean]                     4647241, 31.00
+load-test-dzwn9 Bytes Out     [total, mean]                     0, 0.00
+load-test-dzwn9 Success       [ratio]                           100.00%
+load-test-dzwn9 Status Codes  [code:count]                      200:149911
+load-test-dzwn9 Error Set:
+load-test-dzwn9 Requests      [total, rate, throughput]         180000, 3000.03, 2995.03
+load-test-dzwn9 Duration      [total, attack, wait]             1m0s, 59.999s, 100.183ms
+load-test-dzwn9 Latencies     [min, mean, 50, 90, 95, 99, max]  100.097ms, 101.372ms, 101.04ms, 101.618ms, 101.734ms, 106.11ms, 276.156ms
+load-test-dzwn9 Bytes In      [total, mean]                     5580000, 31.00
+load-test-dzwn9 Bytes Out     [total, mean]                     0, 0.00
+load-test-dzwn9 Success       [ratio]                           100.00%
+load-test-dzwn9 Status Codes  [code:count]                      200:180000
+load-test-dzwn9 Error Set:
+Stream closed EOF for demo/load-test-dzwn9 (vegeta)

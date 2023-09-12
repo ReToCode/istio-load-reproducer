@@ -1,0 +1,176 @@
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.259960Z    debug    ads    Unauthenticated XDS: @
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.260004Z    debug    ads    Unauthenticated XDS: @
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.260771Z    info    ads    ADS: new connection for node:load-test-fff8r.demo-1
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.260787Z    debug    ads    ADS:SDS: REQ load-test-fff8r.demo-1 resources:1 nonce: version:
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.260791Z    debug    ads    ADS:SDS: INIT/RECONNECT load-test-fff8r.demo-1
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.260799Z    debug    cache    generate secret "ROOTCA"
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.260927Z    info    ads    ADS: new connection for node:load-test-fff8r.demo-2
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.260942Z    debug    ads    ADS:SDS: REQ load-test-fff8r.demo-2 resources:1 nonce: version:
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.260946Z    debug    ads    ADS:SDS: INIT/RECONNECT load-test-fff8r.demo-2
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.260952Z    debug    cache    generate secret "default"
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347119Z    info    cache    generated new workload certificate    latency=175.293001ms ttl=23h59m59.652888435s
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347139Z    debug    cache    scheduled certificate for rotation in 11h59m59.826433153s    resource=default
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347143Z    info    cache    Root cert has changed, start rotating root cert
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347154Z    info    ads    XDS: Incremental Pushing:0 ConnectedEndpoints:2 Version:
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347163Z    debug    cache    output the resource to     resource=default
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347167Z    debug    cache    generate secret "ROOTCA"
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347191Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.652812907s
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347201Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347202Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.652799809s
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347206Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347272Z    info    cache    returned workload certificate from cache    ttl=23h59m59.652733739s
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347286Z    debug    cache    output the resource to     resource=default
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347399Z    info    ads    SDS: PUSH request for node:load-test-fff8r.demo resources:1 size:4.0kB resource:default nonce:d40f55d7-0de7-4a2a-abb6-4e187a0d3a8d version:
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347417Z    debug    ads    Skipping push to load-test-fff8r.demo-2, no updates required
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347427Z    info    ads    SDS: PUSH request for node:load-test-fff8r.demo resources:1 size:1.1kB resource:ROOTCA nonce:e55b5031-9007-4aab-8723-51881e6c102f version:
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347445Z    debug    cache    generate secret "ROOTCA"
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347477Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.652525516s
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347484Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.347499Z    debug    ads    SDS: PUSH for node:load-test-fff8r.demo resources:1 size:1.1kB resource:ROOTCA
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.354194Z    debug    ads    ADS:SDS: REQ load-test-fff8r.demo-1 resources:1 nonce:e55b5031-9007-4aab-8723-51881e6c102f version:
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.354206Z    debug    ads    ADS:SDS: REQ load-test-fff8r.demo-1 Expired nonce received e55b5031-9007-4aab-8723-51881e6c102f, sent b245806b-98c8-4a00-988a-8e2010f616fe
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.354219Z    debug    ads    ADS:SDS: REQ load-test-fff8r.demo-2 resources:1 nonce:d40f55d7-0de7-4a2a-abb6-4e187a0d3a8d version:
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.354232Z    debug    ads    ADS:SDS: ACK load-test-fff8r.demo-2  d40f55d7-0de7-4a2a-abb6-4e187a0d3a8d
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.354271Z    debug    ads    ADS:SDS: REQ load-test-fff8r.demo-1 resources:1 nonce:b245806b-98c8-4a00-988a-8e2010f616fe version:
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.354282Z    debug    ads    ADS:SDS: ACK load-test-fff8r.demo-1  b245806b-98c8-4a00-988a-8e2010f616fe
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.354288Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.354300Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.354308Z    debug    xdsproxy    request for type url type.googleapis.com/maistra.security.v1.TrustBundleResponse
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.356562Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.356591Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.356731Z    debug    dns    updated lookup table with 67 hosts
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.356745Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.379983Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.380011Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.381125Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.384996Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.732759Z    info    Readiness succeeded in 600.774887ms
+load-test-fff8r istio-proxy 2023-09-12T08:46:36.733068Z    info    Envoy proxy is ready
+load-test-fff8r istio-proxy 2023-09-12T08:46:38.393929Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 59865
+load-test-fff8r istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-fff8r istio-proxy
+load-test-fff8r istio-proxy ;; OPT PSEUDOSECTION:
+load-test-fff8r istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-fff8r istio-proxy
+load-test-fff8r istio-proxy ;; QUESTION SECTION:
+load-test-fff8r istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-fff8r istio-proxy     protocol=udp edns=true id=57831623-184d-4d26-9a11-fadf93def304
+load-test-fff8r istio-proxy 2023-09-12T08:46:38.393965Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 59865
+load-test-fff8r istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+load-test-fff8r istio-proxy
+load-test-fff8r istio-proxy ;; QUESTION SECTION:
+load-test-fff8r istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-fff8r istio-proxy
+load-test-fff8r istio-proxy ;; ANSWER SECTION:
+load-test-fff8r istio-proxy backend.demo.svc.cluster.local.demo.svc.cluster.local.    30    IN    CNAME    backend.demo.svc.cluster.local.
+load-test-fff8r istio-proxy backend.demo.svc.cluster.local.    30    IN    A    172.30.180.70
+load-test-fff8r istio-proxy     protocol=udp edns=true id=57831623-184d-4d26-9a11-fadf93def304
+load-test-fff8r istio-proxy 2023-09-12T08:46:38.393933Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 30078
+load-test-fff8r istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-fff8r istio-proxy
+load-test-fff8r istio-proxy ;; OPT PSEUDOSECTION:
+load-test-fff8r istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-fff8r istio-proxy
+load-test-fff8r istio-proxy ;; QUESTION SECTION:
+load-test-fff8r istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-fff8r istio-proxy     protocol=udp edns=true id=1a4085e0-137d-4e25-81a1-557bb3688827
+load-test-fff8r istio-proxy 2023-09-12T08:46:38.394004Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 30078
+load-test-fff8r istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+load-test-fff8r istio-proxy
+load-test-fff8r istio-proxy ;; QUESTION SECTION:
+load-test-fff8r istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-fff8r istio-proxy     protocol=udp edns=true id=1a4085e0-137d-4e25-81a1-557bb3688827
+load-test-fff8r istio-proxy 2023-09-12T08:46:40.625126Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-fff8r istio-proxy 2023-09-12T08:46:40.625211Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-fff8r istio-proxy 2023-09-12T08:46:40.626839Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-fff8r istio-proxy 2023-09-12T08:46:40.626901Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-fff8r istio-proxy 2023-09-12T08:46:40.626918Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-fff8r istio-proxy 2023-09-12T08:46:40.627036Z    debug    dns    updated lookup table with 67 hosts
+load-test-fff8r istio-proxy 2023-09-12T08:46:40.627044Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-fff8r istio-proxy 2023-09-12T08:46:40.631933Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-fff8r istio-proxy 2023-09-12T08:46:40.631953Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-fff8r istio-proxy 2023-09-12T08:46:40.636968Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-fff8r istio-proxy 2023-09-12T08:46:40.636985Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-fff8r vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  1.618ms, 1.953s, 1.54s, 4.412s, 5.062s, 9.799s, 18.453s
+load-test-fff8r vegeta Bytes In      [total, mean]                     200911, 20.75
+load-test-fff8r vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-fff8r vegeta Success       [ratio]                           66.92%
+load-test-fff8r vegeta Status Codes  [code:count]                      0:3203  200:6481
+load-test-fff8r vegeta Error Set:
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.180.70:80: bind: address already in use
+load-test-fff8r vegeta Requests      [total, rate, throughput]         15275, 505.36, 217.55
+load-test-fff8r vegeta Duration      [total, attack, wait]             30.228s, 30.226s, 1.774ms
+load-test-fff8r vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  1.556ms, 1.385s, 1.964ms, 3.794s, 4.735s, 12.128s, 28.533s
+load-test-fff8r vegeta Bytes In      [total, mean]                     203856, 13.35
+load-test-fff8r vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-fff8r vegeta Success       [ratio]                           43.05%
+load-test-fff8r vegeta Status Codes  [code:count]                      0:8699  200:6576
+load-test-fff8r vegeta Error Set:
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.180.70:80: bind: address already in use
+load-test-fff8r vegeta Requests      [total, rate, throughput]         16239, 517.06, 166.76
+load-test-fff8r vegeta Duration      [total, attack, wait]             41.154s, 31.407s, 9.748s
+load-test-fff8r vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  1.556ms, 1.872s, 1.932ms, 3.987s, 5.105s, 31.92s, 39.316s
+load-test-fff8r vegeta Bytes In      [total, mean]                     212753, 13.10
+load-test-fff8r vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-fff8r vegeta Success       [ratio]                           42.26%
+load-test-fff8r vegeta Status Codes  [code:count]                      0:9376  200:6863
+load-test-fff8r vegeta Error Set:
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.180.70:80: bind: address already in use
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+load-test-fff8r vegeta Requests      [total, rate, throughput]         30227, 962.14, 336.02
+load-test-fff8r vegeta Duration      [total, attack, wait]             1m2s, 31.416s, 30.124s
+load-test-fff8r vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  1.556ms, 17.97s, 4.672s, 38.137s, 38.62s, 39.11s, 58.765s
+load-test-fff8r vegeta Bytes In      [total, mean]                     641049, 21.21
+load-test-fff8r vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-fff8r vegeta Success       [ratio]                           68.41%
+load-test-fff8r vegeta Status Codes  [code:count]                      0:9548  200:20679
+load-test-fff8r vegeta Error Set:
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.180.70:80: bind: address already in use
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+load-test-fff8r vegeta Requests      [total, rate, throughput]         34992, 1112.59, 298.95
+load-test-fff8r vegeta Duration      [total, attack, wait]             1m12s, 31.451s, 40.126s
+load-test-fff8r vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  1.556ms, 20.918s, 34.095s, 38.266s, 38.863s, 59.708s, 1m6s
+load-test-fff8r vegeta Bytes In      [total, mean]                     663338, 18.96
+load-test-fff8r vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-fff8r vegeta Success       [ratio]                           61.15%
+load-test-fff8r vegeta Status Codes  [code:count]                      0:13594  200:21398
+load-test-fff8r vegeta Error Set:
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.180.70:80: bind: address already in use
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.180.70:80: bind: address already in use (Client.Timeout exceeded while awaiting headers)
+load-test-fff8r vegeta Requests      [total, rate, throughput]         36834, 1114.88, 259.68
+load-test-fff8r vegeta Duration      [total, attack, wait]             1m29s, 33.038s, 56.416s
+load-test-fff8r vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  1.556ms, 22.855s, 34.569s, 38.833s, 59.024s, 1m1s, 1m9s
+load-test-fff8r vegeta Bytes In      [total, mean]                     720130, 19.55
+load-test-fff8r vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-fff8r vegeta Success       [ratio]                           63.07%
+load-test-fff8r vegeta Status Codes  [code:count]                      0:13604  200:23230
+load-test-fff8r vegeta Error Set:
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.180.70:80: bind: address already in use
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.180.70:80: bind: address already in use (Client.Timeout exceeded while awaiting headers)
+load-test-fff8r vegeta Requests      [total, rate, throughput]         39565, 1197.48, 256.16
+load-test-fff8r vegeta Duration      [total, attack, wait]             1m31s, 33.04s, 57.645s
+load-test-fff8r vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  1.556ms, 25.244s, 35.491s, 57.764s, 58.937s, 1m1s, 1m27s
+load-test-fff8r vegeta Bytes In      [total, mean]                     720130, 18.20
+load-test-fff8r vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-fff8r vegeta Success       [ratio]                           58.71%
+load-test-fff8r vegeta Status Codes  [code:count]                      0:16335  200:23230
+load-test-fff8r vegeta Error Set:
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.180.70:80: bind: address already in use
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.180.70:80: bind: address already in use (Client.Timeout exceeded while awaiting headers)
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.180.70:80: i/o timeout (Client.Timeout exceeded while awaiting headers)
+load-test-fff8r vegeta Requests      [total, rate, throughput]         179997, 2854.61, 353.93
+load-test-fff8r vegeta Duration      [total, attack, wait]             1m32s, 1m3s, 29.427s
+load-test-fff8r vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  1.556ms, 45.61s, 49.305s, 1m0s, 1m1s, 1m21s, 1m28s
+load-test-fff8r vegeta Bytes In      [total, mean]                     1014692, 5.64
+load-test-fff8r vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-fff8r vegeta Success       [ratio]                           18.18%
+load-test-fff8r vegeta Status Codes  [code:count]                      0:147265  200:32732
+load-test-fff8r vegeta Error Set:
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.180.70:80: bind: address already in use
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.180.70:80: bind: address already in use (Client.Timeout exceeded while awaiting headers)
+load-test-fff8r vegeta Get "http://backend.demo.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.180.70:80: i/o timeout (Client.Timeout exceeded while awaiting headers)
+Stream closed EOF for demo/load-test-fff8r (vegeta)

@@ -1,0 +1,50 @@
+apiVersion: maistra.io/v2
+kind: ServiceMeshControlPlane
+metadata:
+  name: basic
+  namespace: istio-system
+spec:
+  profiles:
+    - default
+
+  general:
+    logging:
+      componentLevels:
+        all: debug
+
+  security:
+    dataPlane:
+      mtls: false
+
+  gateways:
+      runtime:
+        container:
+          resources:
+            requests:
+              cpu: 10m
+              memory: 128Mi
+            limits:
+              cpu: 4000m
+              memory: 6000Mi
+        deployment:
+          autoScaling:
+            enabled: true
+
+  proxy:
+    runtime:
+      container:
+        resources:
+          requests:
+            cpu: 50m
+            memory: 50Mi
+          limits:
+            cpu: 5000m
+            memory: 5000Mi
+
+  addons:
+    grafana:
+      enabled: true
+    kiali:
+      enabled: true
+    prometheus:
+      enabled: true
