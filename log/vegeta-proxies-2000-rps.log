@@ -1,0 +1,141 @@
+load-test-smqd2 istio-proxy 2023-09-12T11:30:31.985279Z    info    xdsproxy    connected to upstream XDS server: istiod-basic.istio-system.svc:15012
+load-test-smqd2 istio-proxy 2023-09-12T11:30:31.986143Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-smqd2 istio-proxy 2023-09-12T11:30:31.990648Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.010572Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.010612Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.011595Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.013700Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.013760Z    debug    ads    Unauthenticated XDS: @
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.013760Z    debug    ads    Unauthenticated XDS: @
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.014689Z    info    ads    ADS: new connection for node:load-test-smqd2.demo-1
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.014706Z    debug    ads    ADS:SDS: REQ load-test-smqd2.demo-1 resources:1 nonce: version:
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.014711Z    debug    ads    ADS:SDS: INIT/RECONNECT load-test-smqd2.demo-1
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.014719Z    debug    cache    generate secret "ROOTCA"
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.014886Z    info    ads    ADS: new connection for node:load-test-smqd2.demo-2
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.014902Z    debug    ads    ADS:SDS: REQ load-test-smqd2.demo-2 resources:1 nonce: version:
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.014906Z    debug    ads    ADS:SDS: INIT/RECONNECT load-test-smqd2.demo-2
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.014912Z    debug    cache    generate secret "default"
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219428Z    info    cache    generated new workload certificate    latency=307.58127ms ttl=23h59m59.780582011s
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219454Z    debug    cache    scheduled certificate for rotation in 11h59m59.890275795s    resource=default
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219464Z    info    cache    Root cert has changed, start rotating root cert
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219492Z    info    ads    XDS: Incremental Pushing:0 ConnectedEndpoints:2 Version:
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219502Z    debug    cache    output the resource to     resource=default
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219506Z    debug    cache    generate secret "ROOTCA"
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219550Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.780451874s
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219552Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.780456368s
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219568Z    info    cache    returned workload certificate from cache    ttl=23h59m59.780433151s
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219557Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219579Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219691Z    debug    cache    output the resource to     resource=default
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219782Z    info    ads    SDS: PUSH request for node:load-test-smqd2.demo resources:1 size:1.1kB resource:ROOTCA nonce:0775ff9c-cce1-437b-a0f2-0c6f5ad2efa7 version:
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219801Z    debug    cache    generate secret "ROOTCA"
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219783Z    info    ads    SDS: PUSH request for node:load-test-smqd2.demo resources:1 size:4.0kB resource:default nonce:afa42d20-92e2-49a7-8819-2eabe5a96928 version:
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219836Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.780166118s
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219841Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219849Z    debug    ads    Skipping push to load-test-smqd2.demo-2, no updates required
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.219862Z    debug    ads    SDS: PUSH for node:load-test-smqd2.demo resources:1 size:1.1kB resource:ROOTCA
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.229526Z    debug    ads    ADS:SDS: REQ load-test-smqd2.demo-2 resources:1 nonce:afa42d20-92e2-49a7-8819-2eabe5a96928 version:
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.229549Z    debug    ads    ADS:SDS: ACK load-test-smqd2.demo-2  afa42d20-92e2-49a7-8819-2eabe5a96928
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.229551Z    debug    ads    ADS:SDS: REQ load-test-smqd2.demo-1 resources:1 nonce:0775ff9c-cce1-437b-a0f2-0c6f5ad2efa7 version:
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.229565Z    debug    ads    ADS:SDS: REQ load-test-smqd2.demo-1 Expired nonce received 0775ff9c-cce1-437b-a0f2-0c6f5ad2efa7, sent fee4cd53-6554-438d-923f-18bb6da33937
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.229579Z    debug    ads    ADS:SDS: REQ load-test-smqd2.demo-1 resources:1 nonce:fee4cd53-6554-438d-923f-18bb6da33937 version:
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.229586Z    debug    ads    ADS:SDS: ACK load-test-smqd2.demo-1  fee4cd53-6554-438d-923f-18bb6da33937
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.229624Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.229643Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.229647Z    debug    xdsproxy    request for type url type.googleapis.com/maistra.security.v1.TrustBundleResponse
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.232030Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.232072Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.232289Z    debug    dns    updated lookup table with 67 hosts
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.232302Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.258887Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.258923Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.260450Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.265198Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.473358Z    info    Readiness succeeded in 611.804267ms
+load-test-smqd2 istio-proxy 2023-09-12T11:30:32.473675Z    info    Envoy proxy is ready
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.177849Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 62793
+load-test-smqd2 istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-smqd2 istio-proxy
+load-test-smqd2 istio-proxy ;; OPT PSEUDOSECTION:
+load-test-smqd2 istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-smqd2 istio-proxy
+load-test-smqd2 istio-proxy ;; QUESTION SECTION:
+load-test-smqd2 istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-smqd2 istio-proxy     protocol=udp edns=true id=b00d0587-647a-4315-8f6f-252e05fce131
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.177887Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 62793
+load-test-smqd2 istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+load-test-smqd2 istio-proxy
+load-test-smqd2 istio-proxy ;; QUESTION SECTION:
+load-test-smqd2 istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-smqd2 istio-proxy     protocol=udp edns=true id=b00d0587-647a-4315-8f6f-252e05fce131
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.177859Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 27256
+load-test-smqd2 istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-smqd2 istio-proxy
+load-test-smqd2 istio-proxy ;; OPT PSEUDOSECTION:
+load-test-smqd2 istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-smqd2 istio-proxy
+load-test-smqd2 istio-proxy ;; QUESTION SECTION:
+load-test-smqd2 istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-smqd2 istio-proxy     protocol=udp edns=true id=620c9881-05d0-42f6-a47d-78701e6c0558
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.177952Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 27256
+load-test-smqd2 istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+load-test-smqd2 istio-proxy
+load-test-smqd2 istio-proxy ;; QUESTION SECTION:
+load-test-smqd2 istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-smqd2 istio-proxy
+load-test-smqd2 istio-proxy ;; ANSWER SECTION:
+load-test-smqd2 istio-proxy backend.demo.svc.cluster.local.demo.svc.cluster.local.    30    IN    CNAME    backend.demo.svc.cluster.local.
+load-test-smqd2 istio-proxy backend.demo.svc.cluster.local.    30    IN    A    172.30.180.70
+load-test-smqd2 istio-proxy     protocol=udp edns=true id=620c9881-05d0-42f6-a47d-78701e6c0558
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.938317Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.938372Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.939499Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.939607Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.939621Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.939759Z    debug    dns    updated lookup table with 67 hosts
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.939769Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.944045Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.944067Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.948098Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-smqd2 istio-proxy 2023-09-12T11:30:34.948121Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-smqd2 vegeta Requests      [total, rate, throughput]         40190, 2000.05, 1989.99
+load-test-smqd2 vegeta Duration      [total, attack, wait]             20.196s, 20.094s, 101.67ms
+load-test-smqd2 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.728ms, 106.948ms, 101.908ms, 102.596ms, 103.257ms, 315.225ms, 417.715ms
+load-test-smqd2 vegeta Bytes In      [total, mean]                     1245890, 31.00
+load-test-smqd2 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-smqd2 vegeta Success       [ratio]                           100.00%
+load-test-smqd2 vegeta Status Codes  [code:count]                      200:40190
+load-test-smqd2 vegeta Error Set:
+load-test-smqd2 vegeta Requests      [total, rate, throughput]         60177, 2000.04, 1993.23
+load-test-smqd2 vegeta Duration      [total, attack, wait]             30.191s, 30.088s, 102.672ms
+load-test-smqd2 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.728ms, 105.295ms, 101.901ms, 102.558ms, 102.906ms, 276.484ms, 417.715ms
+load-test-smqd2 vegeta Bytes In      [total, mean]                     1865487, 31.00
+load-test-smqd2 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-smqd2 vegeta Success       [ratio]                           100.00%
+load-test-smqd2 vegeta Status Codes  [code:count]                      200:60177
+load-test-smqd2 vegeta Error Set:
+load-test-smqd2 vegeta Requests      [total, rate, throughput]         80178, 2000.05, 1994.98
+load-test-smqd2 vegeta Duration      [total, attack, wait]             40.19s, 40.088s, 101.885ms
+load-test-smqd2 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.728ms, 104.45ms, 101.894ms, 102.534ms, 102.816ms, 230.866ms, 417.715ms
+load-test-smqd2 vegeta Bytes In      [total, mean]                     2485518, 31.00
+load-test-smqd2 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-smqd2 vegeta Success       [ratio]                           100.00%
+load-test-smqd2 vegeta Status Codes  [code:count]                      200:80178
+load-test-smqd2 vegeta Error Set:
+load-test-smqd2 vegeta Requests      [total, rate, throughput]         100173, 2000.04, 1995.98
+load-test-smqd2 vegeta Duration      [total, attack, wait]             50.187s, 50.085s, 101.916ms
+load-test-smqd2 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.728ms, 103.945ms, 101.888ms, 102.519ms, 102.79ms, 184.014ms, 417.715ms
+load-test-smqd2 vegeta Bytes In      [total, mean]                     3105363, 31.00
+load-test-smqd2 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-smqd2 vegeta Success       [ratio]                           100.00%
+load-test-smqd2 vegeta Status Codes  [code:count]                      200:100173
+load-test-smqd2 vegeta Error Set:
+load-test-smqd2 vegeta Requests      [total, rate, throughput]         120000, 2000.01, 1996.63
+load-test-smqd2 vegeta Duration      [total, attack, wait]             1m0s, 1m0s, 101.734ms
+load-test-smqd2 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.72ms, 103.608ms, 101.882ms, 102.51ms, 102.763ms, 138.335ms, 417.715ms
+load-test-smqd2 vegeta Bytes In      [total, mean]                     3720000, 31.00
+load-test-smqd2 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-smqd2 vegeta Success       [ratio]                           100.00%
+load-test-smqd2 vegeta Status Codes  [code:count]                      200:120000
+load-test-smqd2 vegeta Error Set:
+Stream closed EOF for demo/load-test-smqd2 (vegeta)

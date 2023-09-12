@@ -66,6 +66,21 @@ load-test-7wjw2 Success       [ratio]                           100.00%
 load-test-7wjw2 Status Codes  [code:count]                      200:60000  
 ```
 
+### 2000 RPS - with proxies
+
+✅ This is fine:
+
+```text
+load-test-smqd2 vegeta Requests      [total, rate, throughput]         120000, 2000.01, 1996.63
+load-test-smqd2 vegeta Duration      [total, attack, wait]             1m0s, 1m0s, 101.734ms
+load-test-smqd2 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.72ms, 103.608ms, 101.882ms, 102.51ms, 102.763ms, 138.335ms, 417.715ms
+load-test-smqd2 vegeta Bytes In      [total, mean]                     3720000, 31.00
+load-test-smqd2 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-smqd2 vegeta Success       [ratio]                           100.00%
+load-test-smqd2 vegeta Status Codes  [code:count]                      200:120000  
+```
+
+
 ### 3000 RPS - with proxies
 
 ⛔️ This fails, throughput can not be reached:
