@@ -89,6 +89,25 @@ load-test-fff8r vegeta Success       [ratio]                           18.18%
 load-test-fff8r vegeta Status Codes  [code:count]                      0:147265  200:32732
 ```
 
+### 3000 RPS - with proxies, backend scaled to 20
+
+```bash
+ oc scale -n demo deploy/backend --replicas=20
+```
+
+✅ This is fine:
+
+```text
+load-test-p4qz5 vegeta Requests      [total, rate, throughput]         180000, 2999.99, 2994.87
+load-test-p4qz5 vegeta Duration      [total, attack, wait]             1m0s, 1m0s, 102.467ms
+load-test-p4qz5 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.745ms, 128.389ms, 102.05ms, 103.101ms, 127.932ms, 974.465ms, 1.719s
+load-test-p4qz5 vegeta Bytes In      [total, mean]                     5580000, 31.00
+load-test-p4qz5 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-p4qz5 vegeta Success       [ratio]                           100.00%
+load-test-p4qz5 vegeta Status Codes  [code:count]                      200:180000  
+```
+
+
 ### 3000 RPS - without proxies
 
 ✅ This is fine:
@@ -115,4 +134,48 @@ load-test-2z5cm Bytes In      [total, mean]                     11160031, 31.00
 load-test-2z5cm Bytes Out     [total, mean]                     0, 0.00
 load-test-2z5cm Success       [ratio]                           100.00%
 load-test-2z5cm Status Codes  [code:count]                      200:360001  
+```
+
+### 6x 1000 RPS - with proxies (10 backends)
+
+✅ This is fine:
+
+```text
+load-test-kgswv vegeta Requests      [total, rate, throughput]         60000, 1000.02, 998.33
+load-test-kgswv vegeta Duration      [total, attack, wait]             1m0s, 59.999s, 101.692ms
+load-test-kgswv vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.703ms, 101.692ms, 101.554ms, 102.127ms, 102.277ms, 104.88ms, 147.502ms
+load-test-kgswv vegeta Bytes In      [total, mean]                     1860000, 31.00
+load-test-kgswv vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-kgswv vegeta Success       [ratio]                           100.00%
+load-test-kgswv vegeta Status Codes  [code:count]                      200:60000  
+load-test-kgswv vegeta Error Set:
+```
+
+
+### 6x 1000 RPS - with proxies (20 backends)
+
+✅ This is fine:
+
+```text
+load-test-vsj5g vegeta Requests      [total, rate, throughput]         60000, 1000.02, 998.32
+load-test-vsj5g vegeta Duration      [total, attack, wait]             1m0s, 59.999s, 101.925ms
+load-test-vsj5g vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.709ms, 101.754ms, 101.645ms, 102.171ms, 102.291ms, 104.569ms, 137.75ms
+load-test-vsj5g vegeta Bytes In      [total, mean]                     1860000, 31.00
+load-test-vsj5g vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-vsj5g vegeta Success       [ratio]                           100.00%
+load-test-vsj5g vegeta Status Codes  [code:count]                      200:60000  
+```
+
+### 6x 2000 RPS - with proxies (10 backends)
+
+✅ This is fine:
+
+```text
+  load-test-dc6k9 vegeta Requests      [total, rate, throughput]         119999, 2000.02, 1996.66
+  load-test-dc6k9 vegeta Duration      [total, attack, wait]             1m0s, 59.999s, 100.695ms
+  load-test-dc6k9 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.695ms, 102.72ms, 101.687ms, 102.352ms, 102.623ms, 116.492ms, 340.705ms
+  load-test-dc6k9 vegeta Bytes In      [total, mean]                     3719969, 31.00
+  load-test-dc6k9 vegeta Bytes Out     [total, mean]                     0, 0.00
+  load-test-dc6k9 vegeta Success       [ratio]                           100.00%
+  load-test-dc6k9 vegeta Status Codes  [code:count]                      200:119999
 ```

@@ -13,7 +13,7 @@ metadata:
   name: load-test
   namespace: demo
 spec:
-  parallelism: 1
+  parallelism: 6
   template:
     metadata:
       labels:
@@ -27,7 +27,7 @@ spec:
           image: quay.io/rlehmann/vegeta/v12
           command: ["/bin/bash", "-c"]
           args:
-            - "/ko-app/v12 -cpus=1 attack -duration=1m -rate=3000/1s -targets=/var/vegeta/payload | /ko-app/v12 report -every 10s"
+            - "/ko-app/v12 -cpus=1 attack -duration=1m -rate=2000/1s -targets=/var/vegeta/payload | /ko-app/v12 report -every 10s"
           resources:
             requests:
               cpu: 1000m

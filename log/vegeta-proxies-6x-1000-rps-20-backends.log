@@ -1,0 +1,845 @@
+load-test-4qcwk istio-proxy 2023-09-12T10:46:27.379465Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-4qcwk istio-proxy 2023-09-12T10:46:27.379489Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-4qcwk istio-proxy 2023-09-12T10:46:27.379497Z    debug    xdsproxy    request for type url type.googleapis.com/maistra.security.v1.TrustBundleResponse
+load-test-4qcwk istio-proxy 2023-09-12T10:46:27.382660Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-4qcwk istio-proxy 2023-09-12T10:46:27.382694Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-4qcwk istio-proxy 2023-09-12T10:46:27.382866Z    debug    dns    updated lookup table with 67 hosts
+load-test-4qcwk istio-proxy 2023-09-12T10:46:27.382879Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-4qcwk istio-proxy 2023-09-12T10:46:27.405955Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-4qcwk istio-proxy 2023-09-12T10:46:27.405986Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-4qcwk istio-proxy 2023-09-12T10:46:27.407962Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-4qcwk istio-proxy 2023-09-12T10:46:27.412011Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-4qcwk istio-proxy 2023-09-12T10:46:27.693364Z    info    Readiness succeeded in 608.829354ms
+load-test-4qcwk vegeta Error Set:
+load-test-4qcwk istio-proxy 2023-09-12T10:46:27.693672Z    info    Envoy proxy is ready
+load-test-4qcwk istio-proxy 2023-09-12T10:46:29.218076Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 45740
+load-test-4qcwk istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-4qcwk istio-proxy
+load-test-4qcwk istio-proxy ;; OPT PSEUDOSECTION:
+load-test-4qcwk istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-4qcwk istio-proxy
+load-test-4qcwk istio-proxy ;; QUESTION SECTION:
+load-test-4qcwk istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-4qcwk istio-proxy     protocol=udp edns=true id=3bc6e96e-0cdd-4df5-95d5-e5599ec2dd2c
+load-test-4qcwk istio-proxy 2023-09-12T10:46:29.218118Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 45740
+load-test-4qcwk istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+load-test-4qcwk istio-proxy
+load-test-4qcwk istio-proxy ;; QUESTION SECTION:
+load-test-4qcwk istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-4qcwk istio-proxy
+load-test-4qcwk istio-proxy ;; ANSWER SECTION:
+load-test-4qcwk istio-proxy backend.demo.svc.cluster.local.demo.svc.cluster.local.    30    IN    CNAME    backend.demo.svc.cluster.local.
+load-test-4qcwk istio-proxy backend.demo.svc.cluster.local.    30    IN    A    172.30.180.70
+load-test-4qcwk istio-proxy     protocol=udp edns=true id=3bc6e96e-0cdd-4df5-95d5-e5599ec2dd2c
+load-test-4qcwk istio-proxy 2023-09-12T10:46:29.218078Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 14183
+load-test-4qcwk istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-4qcwk istio-proxy
+load-test-4qcwk istio-proxy ;; OPT PSEUDOSECTION:
+load-test-4qcwk istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-4qcwk istio-proxy
+load-test-4qcwk istio-proxy ;; QUESTION SECTION:
+load-test-4qcwk istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-4qcwk istio-proxy     protocol=udp edns=true id=b85af70e-389b-4956-ac7f-435ff2abe914
+load-test-4qcwk istio-proxy 2023-09-12T10:46:29.218165Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 14183
+load-test-4qcwk istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+load-test-4qcwk istio-proxy
+load-test-4qcwk istio-proxy ;; QUESTION SECTION:
+load-test-4qcwk istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-4qcwk istio-proxy     protocol=udp edns=true id=b85af70e-389b-4956-ac7f-435ff2abe914
+load-test-4qcwk istio-proxy 2023-09-12T10:46:30.243602Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-4qcwk istio-proxy 2023-09-12T10:46:30.244414Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-4qcwk istio-proxy 2023-09-12T10:46:30.244922Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-4qcwk istio-proxy 2023-09-12T10:46:30.245516Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-4qcwk istio-proxy 2023-09-12T10:46:30.245533Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-4qcwk istio-proxy 2023-09-12T10:46:30.245694Z    debug    dns    updated lookup table with 67 hosts
+load-test-4qcwk istio-proxy 2023-09-12T10:46:30.245706Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-4qcwk istio-proxy 2023-09-12T10:46:30.248435Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-4qcwk istio-proxy 2023-09-12T10:46:30.252755Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-4qcwk istio-proxy 2023-09-12T10:46:30.252775Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-4qcwk istio-proxy 2023-09-12T10:46:30.252781Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-4qcwk vegeta Requests      [total, rate, throughput]         20042, 1000.06, 994.99
+load-test-4qcwk vegeta Duration      [total, attack, wait]             20.143s, 20.041s, 102.018ms
+load-test-4qcwk vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  101.57ms, 102.913ms, 102.7ms, 103.315ms, 103.511ms, 110.095ms, 140.183ms
+load-test-4qcwk vegeta Bytes In      [total, mean]                     621302, 31.00
+load-test-4qcwk vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-4qcwk vegeta Success       [ratio]                           100.00%
+load-test-4qcwk vegeta Status Codes  [code:count]                      200:20042
+load-test-4qcwk vegeta Error Set:
+load-test-4qcwk vegeta Requests      [total, rate, throughput]         30032, 999.96, 996.57
+load-test-4qcwk vegeta Duration      [total, attack, wait]             30.135s, 30.033s, 102.31ms
+load-test-4qcwk vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  101.565ms, 102.855ms, 102.694ms, 103.302ms, 103.475ms, 108.297ms, 140.183ms
+load-test-4qcwk vegeta Bytes In      [total, mean]                     930992, 31.00
+load-test-4qcwk vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-4qcwk vegeta Success       [ratio]                           100.00%
+load-test-4qcwk vegeta Status Codes  [code:count]                      200:30032
+load-test-4qcwk vegeta Error Set:
+load-test-4qcwk vegeta Requests      [total, rate, throughput]         40033, 1000.03, 997.46
+load-test-4qcwk vegeta Duration      [total, attack, wait]             40.135s, 40.032s, 103.257ms
+load-test-4qcwk vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  101.565ms, 102.83ms, 102.69ms, 103.293ms, 103.461ms, 107.311ms, 140.183ms
+load-test-4qcwk vegeta Bytes In      [total, mean]                     1241023, 31.00
+load-test-4qcwk vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-4qcwk vegeta Success       [ratio]                           100.00%
+load-test-4qcwk vegeta Status Codes  [code:count]                      200:40033
+load-test-4qcwk vegeta Error Set:
+load-test-4qcwk vegeta Requests      [total, rate, throughput]         50041, 1000.01, 997.97
+load-test-4qcwk vegeta Duration      [total, attack, wait]             50.143s, 50.041s, 102.441ms
+load-test-4qcwk vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  101.565ms, 102.804ms, 102.687ms, 103.286ms, 103.449ms, 106.13ms, 140.183ms
+load-test-4qcwk vegeta Bytes In      [total, mean]                     1551271, 31.00
+load-test-4qcwk vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-4qcwk vegeta Success       [ratio]                           100.00%
+load-test-4qcwk vegeta Status Codes  [code:count]                      200:50041
+load-test-4qcwk vegeta Error Set:
+load-test-4qcwk vegeta Requests      [total, rate, throughput]         60000, 1000.02, 998.31
+load-test-4qcwk vegeta Duration      [total, attack, wait]             1m0s, 59.999s, 102.52ms
+load-test-4qcwk vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  101.555ms, 102.797ms, 102.684ms, 103.284ms, 103.441ms, 105.969ms, 140.183ms
+load-test-4qcwk vegeta Bytes In      [total, mean]                     1860000, 31.00
+load-test-4qcwk vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-4qcwk vegeta Success       [ratio]                           100.00%
+load-test-4qcwk vegeta Status Codes  [code:count]                      200:60000
+load-test-4qcwk vegeta Error Set:
+Stream closed EOF for demo/load-test-4qcwk (vegeta)
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.175740Z    info    xdsproxy    connected to upstream XDS server: istiod-basic.istio-system.svc:15012
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.176503Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.180256Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.194320Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.194343Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.194916Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.196451Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.196476Z    debug    ads    Unauthenticated XDS: @
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.196527Z    debug    ads    Unauthenticated XDS: @
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.197319Z    info    ads    ADS: new connection for node:load-test-7dj29.demo-1
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.197335Z    debug    ads    ADS:SDS: REQ load-test-7dj29.demo-1 resources:1 nonce: version:
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.197340Z    debug    ads    ADS:SDS: INIT/RECONNECT load-test-7dj29.demo-1
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.197348Z    debug    cache    generate secret "ROOTCA"
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.197515Z    info    ads    ADS: new connection for node:load-test-7dj29.demo-2
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.197530Z    debug    ads    ADS:SDS: REQ load-test-7dj29.demo-2 resources:1 nonce: version:
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.197534Z    debug    ads    ADS:SDS: INIT/RECONNECT load-test-7dj29.demo-2
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.197541Z    debug    cache    generate secret "default"
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219014Z    info    cache    generated new workload certificate    latency=109.129024ms ttl=23h59m59.780991481s
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219032Z    debug    cache    scheduled certificate for rotation in 11h59m59.890486377s    resource=default
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219035Z    info    cache    Root cert has changed, start rotating root cert
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219045Z    info    ads    XDS: Incremental Pushing:0 ConnectedEndpoints:2 Version:
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219055Z    debug    cache    output the resource to     resource=default
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219059Z    debug    cache    generate secret "ROOTCA"
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219089Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.780913376s
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219097Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219113Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.780888076s
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219118Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219160Z    info    cache    returned workload certificate from cache    ttl=23h59m59.780844031s
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219169Z    debug    cache    output the resource to     resource=default
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219317Z    info    ads    SDS: PUSH request for node:load-test-7dj29.demo resources:1 size:1.1kB resource:ROOTCA nonce:3d5cf4c9-5aff-47fc-ab84-f2d872ab419e version:
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219333Z    debug    cache    generate secret "ROOTCA"
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219352Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.780649047s
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219361Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219360Z    info    ads    SDS: PUSH request for node:load-test-7dj29.demo resources:1 size:4.0kB resource:default nonce:22bf1250-ffde-4dce-841a-98dd28cd3414 version:
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219379Z    debug    ads    Skipping push to load-test-7dj29.demo-2, no updates required
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.219381Z    debug    ads    SDS: PUSH for node:load-test-7dj29.demo resources:1 size:1.1kB resource:ROOTCA
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.226336Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.226354Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.226352Z    debug    ads    ADS:SDS: REQ load-test-7dj29.demo-2 resources:1 nonce:22bf1250-ffde-4dce-841a-98dd28cd3414 version:
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.226360Z    debug    xdsproxy    request for type url type.googleapis.com/maistra.security.v1.TrustBundleResponse
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.226359Z    debug    ads    ADS:SDS: REQ load-test-7dj29.demo-1 resources:1 nonce:3d5cf4c9-5aff-47fc-ab84-f2d872ab419e version:
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.226365Z    debug    ads    ADS:SDS: ACK load-test-7dj29.demo-2  22bf1250-ffde-4dce-841a-98dd28cd3414
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.226367Z    debug    ads    ADS:SDS: REQ load-test-7dj29.demo-1 Expired nonce received 3d5cf4c9-5aff-47fc-ab84-f2d872ab419e, sent 2c2767de-98e8-4df6-a06a-565b11c6a78b
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.226376Z    debug    ads    ADS:SDS: REQ load-test-7dj29.demo-1 resources:1 nonce:2c2767de-98e8-4df6-a06a-565b11c6a78b version:
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.226391Z    debug    ads    ADS:SDS: ACK load-test-7dj29.demo-1  2c2767de-98e8-4df6-a06a-565b11c6a78b
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.227959Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.227990Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.228178Z    debug    dns    updated lookup table with 67 hosts
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.228191Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.250644Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.250663Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.251182Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.255004Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.658264Z    info    Readiness succeeded in 590.415463ms
+load-test-7dj29 istio-proxy 2023-09-12T10:46:27.658567Z    info    Envoy proxy is ready
+load-test-7dj29 istio-proxy 2023-09-12T10:46:32.944301Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 38416
+load-test-7dj29 istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-7dj29 istio-proxy
+load-test-7dj29 istio-proxy ;; OPT PSEUDOSECTION:
+load-test-7dj29 istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-7dj29 istio-proxy
+load-test-7dj29 istio-proxy ;; QUESTION SECTION:
+load-test-7dj29 istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-7dj29 istio-proxy     protocol=udp edns=true id=c5613e07-7ef8-49de-a26a-fccdd2656c4d
+load-test-7dj29 istio-proxy 2023-09-12T10:46:32.944344Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 38416
+load-test-7dj29 istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+load-test-7dj29 istio-proxy
+load-test-7dj29 istio-proxy ;; QUESTION SECTION:
+load-test-7dj29 istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-7dj29 istio-proxy
+load-test-7dj29 istio-proxy ;; ANSWER SECTION:
+load-test-7dj29 istio-proxy backend.demo.svc.cluster.local.demo.svc.cluster.local.    30    IN    CNAME    backend.demo.svc.cluster.local.
+load-test-7dj29 istio-proxy backend.demo.svc.cluster.local.    30    IN    A    172.30.180.70
+load-test-7dj29 istio-proxy     protocol=udp edns=true id=c5613e07-7ef8-49de-a26a-fccdd2656c4d
+load-test-7dj29 istio-proxy 2023-09-12T10:46:32.944306Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 45793
+load-test-7dj29 istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-7dj29 istio-proxy
+load-test-7dj29 istio-proxy ;; OPT PSEUDOSECTION:
+load-test-7dj29 istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-7dj29 istio-proxy
+load-test-7dj29 istio-proxy ;; QUESTION SECTION:
+load-test-7dj29 istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-7dj29 istio-proxy     protocol=udp edns=true id=25eceb0a-78b8-4ec6-aedf-356a7b4119b9
+load-test-7dj29 istio-proxy 2023-09-12T10:46:32.944404Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 45793
+load-test-7dj29 istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+load-test-7dj29 istio-proxy
+load-test-7dj29 istio-proxy ;; QUESTION SECTION:
+load-test-7dj29 istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-7dj29 istio-proxy     protocol=udp edns=true id=25eceb0a-78b8-4ec6-aedf-356a7b4119b9
+load-test-7dj29 istio-proxy 2023-09-12T10:46:33.841375Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-7dj29 istio-proxy 2023-09-12T10:46:33.841416Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-7dj29 istio-proxy 2023-09-12T10:46:33.842241Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-7dj29 istio-proxy 2023-09-12T10:46:33.842280Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-7dj29 istio-proxy 2023-09-12T10:46:33.842289Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-7dj29 istio-proxy 2023-09-12T10:46:33.842460Z    debug    dns    updated lookup table with 67 hosts
+load-test-7dj29 istio-proxy 2023-09-12T10:46:33.842478Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-7dj29 istio-proxy 2023-09-12T10:46:33.845809Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-7dj29 istio-proxy 2023-09-12T10:46:33.845841Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-7dj29 istio-proxy 2023-09-12T10:46:33.849140Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-7dj29 istio-proxy 2023-09-12T10:46:33.849159Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-7dj29 vegeta Requests      [total, rate, throughput]         10014, 1000.07, 990.03
+load-test-7dj29 vegeta Duration      [total, attack, wait]             10.115s, 10.013s, 101.511ms
+load-test-7dj29 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.801ms, 101.966ms, 101.647ms, 102.228ms, 102.511ms, 113.895ms, 137.489ms
+load-test-7dj29 vegeta Bytes In      [total, mean]                     310434, 31.00
+load-test-7dj29 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-7dj29 vegeta Success       [ratio]                           100.00%
+load-test-7dj29 vegeta Status Codes  [code:count]                      200:10014
+load-test-7dj29 vegeta Error Set:
+load-test-7dj29 vegeta Requests      [total, rate, throughput]         20023, 1000.04, 994.95
+load-test-7dj29 vegeta Duration      [total, attack, wait]             20.125s, 20.022s, 102.357ms
+load-test-7dj29 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.775ms, 101.81ms, 101.634ms, 102.177ms, 102.357ms, 107.353ms, 137.489ms
+load-test-7dj29 vegeta Bytes In      [total, mean]                     620713, 31.00
+load-test-7dj29 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-7dj29 vegeta Success       [ratio]                           100.00%
+load-test-7dj29 vegeta Status Codes  [code:count]                      200:20023
+load-test-7dj29 vegeta Error Set:
+load-test-7dj29 vegeta Requests      [total, rate, throughput]         30016, 1000.04, 996.66
+load-test-7dj29 vegeta Duration      [total, attack, wait]             30.116s, 30.015s, 101.607ms
+load-test-7dj29 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.773ms, 101.777ms, 101.627ms, 102.166ms, 102.331ms, 106.28ms, 137.489ms
+load-test-7dj29 vegeta Bytes In      [total, mean]                     930496, 31.00
+load-test-7dj29 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-7dj29 vegeta Success       [ratio]                           100.00%
+load-test-7dj29 vegeta Status Codes  [code:count]                      200:30016
+load-test-7dj29 vegeta Error Set:
+load-test-7dj29 vegeta Requests      [total, rate, throughput]         40021, 1000.02, 997.49
+load-test-7dj29 vegeta Duration      [total, attack, wait]             40.122s, 40.02s, 101.513ms
+load-test-7dj29 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.755ms, 101.745ms, 101.624ms, 102.155ms, 102.311ms, 105.142ms, 137.489ms
+load-test-7dj29 vegeta Bytes In      [total, mean]                     1240651, 31.00
+load-test-7dj29 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-7dj29 vegeta Success       [ratio]                           100.00%
+load-test-7dj29 vegeta Status Codes  [code:count]                      200:40021
+load-test-7dj29 vegeta Error Set:
+load-test-7dj29 vegeta Requests      [total, rate, throughput]         50023, 1000.01, 997.99
+load-test-7dj29 vegeta Duration      [total, attack, wait]             50.124s, 50.023s, 101.278ms
+load-test-7dj29 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.755ms, 101.742ms, 101.622ms, 102.153ms, 102.308ms, 105.001ms, 137.489ms
+load-test-7dj29 vegeta Bytes In      [total, mean]                     1550713, 31.00
+load-test-7dj29 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-7dj29 vegeta Success       [ratio]                           100.00%
+load-test-7dj29 vegeta Status Codes  [code:count]                      200:50023
+load-test-7dj29 vegeta Error Set:
+load-test-7dj29 vegeta Requests      [total, rate, throughput]         60000, 1000.00, 998.31
+load-test-7dj29 vegeta Duration      [total, attack, wait]             1m0s, 1m0s, 102.124ms
+load-test-7dj29 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.755ms, 101.724ms, 101.62ms, 102.147ms, 102.297ms, 104.306ms, 137.489ms
+load-test-7dj29 vegeta Bytes In      [total, mean]                     1860000, 31.00
+load-test-7dj29 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-7dj29 vegeta Success       [ratio]                           100.00%
+load-test-7dj29 vegeta Status Codes  [code:count]                      200:60000
+load-test-7dj29 vegeta Error Set:
+Stream closed EOF for demo/load-test-7dj29 (vegeta)
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.136181Z    info    xdsproxy    connected to upstream XDS server: istiod-basic.istio-system.svc:15012
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.136990Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.141097Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.153174Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.153206Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.154242Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.156004Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.156078Z    debug    ads    Unauthenticated XDS: @
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.156103Z    debug    ads    Unauthenticated XDS: @
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.156846Z    info    ads    ADS: new connection for node:load-test-nphz7.demo-1
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.156865Z    debug    ads    ADS:SDS: REQ load-test-nphz7.demo-1 resources:1 nonce: version:
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.156870Z    debug    ads    ADS:SDS: INIT/RECONNECT load-test-nphz7.demo-1
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.156878Z    debug    cache    generate secret "default"
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.157125Z    info    ads    ADS: new connection for node:load-test-nphz7.demo-2
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.157141Z    debug    ads    ADS:SDS: REQ load-test-nphz7.demo-2 resources:1 nonce: version:
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.157145Z    debug    ads    ADS:SDS: INIT/RECONNECT load-test-nphz7.demo-2
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.157151Z    debug    cache    generate secret "ROOTCA"
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.186799Z    info    cache    generated new workload certificate    latency=122.988731ms ttl=23h59m59.813211333s
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.186830Z    debug    cache    scheduled certificate for rotation in 11h59m59.906588819s    resource=default
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.186840Z    info    cache    Root cert has changed, start rotating root cert
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.186854Z    info    ads    XDS: Incremental Pushing:0 ConnectedEndpoints:2 Version:
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.186868Z    debug    cache    output the resource to     resource=default
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.186873Z    debug    cache    generate secret "ROOTCA"
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.186923Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.813079625s
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.186933Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.186943Z    info    cache    returned workload certificate from cache    ttl=23h59m59.813058796s
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.186947Z    debug    cache    output the resource to     resource=default
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.187072Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.812933414s
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.187085Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.187178Z    info    ads    SDS: PUSH request for node:load-test-nphz7.demo resources:1 size:4.0kB resource:default nonce:b767d964-4ea1-424d-ad69-5a9a1681283e version:
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.187195Z    debug    ads    Skipping push to load-test-nphz7.demo-1, no updates required
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.187225Z    info    ads    SDS: PUSH request for node:load-test-nphz7.demo resources:1 size:1.1kB resource:ROOTCA nonce:4d812b5e-abb3-49bc-84b8-563660a343e5 version:
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.187246Z    debug    cache    generate secret "ROOTCA"
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.187282Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.812720356s
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.187291Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.187309Z    debug    ads    SDS: PUSH for node:load-test-nphz7.demo resources:1 size:1.1kB resource:ROOTCA
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.194285Z    debug    ads    ADS:SDS: REQ load-test-nphz7.demo-2 resources:1 nonce:4d812b5e-abb3-49bc-84b8-563660a343e5 version:
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.194295Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.194304Z    debug    ads    ADS:SDS: REQ load-test-nphz7.demo-2 Expired nonce received 4d812b5e-abb3-49bc-84b8-563660a343e5, sent 093b5839-b41c-4b0f-a1a9-7d817684f4e7
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.194316Z    debug    ads    ADS:SDS: REQ load-test-nphz7.demo-2 resources:1 nonce:093b5839-b41c-4b0f-a1a9-7d817684f4e7 version:
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.194319Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.194322Z    debug    ads    ADS:SDS: ACK load-test-nphz7.demo-2  093b5839-b41c-4b0f-a1a9-7d817684f4e7
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.194324Z    debug    xdsproxy    request for type url type.googleapis.com/maistra.security.v1.TrustBundleResponse
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.194319Z    debug    ads    ADS:SDS: REQ load-test-nphz7.demo-1 resources:1 nonce:b767d964-4ea1-424d-ad69-5a9a1681283e version:
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.194348Z    debug    ads    ADS:SDS: ACK load-test-nphz7.demo-1  b767d964-4ea1-424d-ad69-5a9a1681283e
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.196508Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.196535Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.196740Z    debug    dns    updated lookup table with 67 hosts
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.196756Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.220126Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.220155Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.221195Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.225295Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.607828Z    info    Readiness succeeded in 582.938257ms
+load-test-nphz7 istio-proxy 2023-09-12T10:46:28.608109Z    info    Envoy proxy is ready
+load-test-nphz7 istio-proxy 2023-09-12T10:46:30.141600Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 10483
+load-test-nphz7 istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-nphz7 istio-proxy
+load-test-nphz7 istio-proxy ;; OPT PSEUDOSECTION:
+load-test-nphz7 istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-nphz7 istio-proxy
+load-test-nphz7 istio-proxy ;; QUESTION SECTION:
+load-test-nphz7 istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-nphz7 istio-proxy     protocol=udp edns=true id=880f31dd-ee61-4b10-bfe6-483833c7f1d3
+load-test-nphz7 istio-proxy 2023-09-12T10:46:30.141647Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 10483
+load-test-nphz7 istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+load-test-nphz7 istio-proxy
+load-test-nphz7 istio-proxy ;; QUESTION SECTION:
+load-test-nphz7 istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-nphz7 istio-proxy
+load-test-nphz7 istio-proxy ;; ANSWER SECTION:
+load-test-nphz7 istio-proxy backend.demo.svc.cluster.local.demo.svc.cluster.local.    30    IN    CNAME    backend.demo.svc.cluster.local.
+load-test-nphz7 istio-proxy backend.demo.svc.cluster.local.    30    IN    A    172.30.180.70
+load-test-nphz7 istio-proxy     protocol=udp edns=true id=880f31dd-ee61-4b10-bfe6-483833c7f1d3
+load-test-nphz7 istio-proxy 2023-09-12T10:46:30.141600Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 56672
+load-test-nphz7 istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-nphz7 istio-proxy
+load-test-nphz7 istio-proxy ;; OPT PSEUDOSECTION:
+load-test-nphz7 istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-nphz7 istio-proxy
+load-test-nphz7 istio-proxy ;; QUESTION SECTION:
+load-test-nphz7 istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-nphz7 istio-proxy     protocol=udp edns=true id=9f126175-14d3-4e7f-be9e-0a1eafd809c1
+load-test-nphz7 istio-proxy 2023-09-12T10:46:30.141719Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 56672
+load-test-nphz7 istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+load-test-nphz7 istio-proxy
+load-test-nphz7 istio-proxy ;; QUESTION SECTION:
+load-test-nphz7 istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-nphz7 istio-proxy     protocol=udp edns=true id=9f126175-14d3-4e7f-be9e-0a1eafd809c1
+load-test-nphz7 istio-proxy 2023-09-12T10:46:31.143095Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-nphz7 istio-proxy 2023-09-12T10:46:31.143141Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-nphz7 istio-proxy 2023-09-12T10:46:31.144740Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-nphz7 istio-proxy 2023-09-12T10:46:31.144780Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-nphz7 istio-proxy 2023-09-12T10:46:31.144793Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-nphz7 istio-proxy 2023-09-12T10:46:31.144915Z    debug    dns    updated lookup table with 67 hosts
+load-test-nphz7 istio-proxy 2023-09-12T10:46:31.144933Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-nphz7 istio-proxy 2023-09-12T10:46:31.147271Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-nphz7 istio-proxy 2023-09-12T10:46:31.147294Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-nphz7 istio-proxy 2023-09-12T10:46:31.150644Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-nphz7 istio-proxy 2023-09-12T10:46:31.150699Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-nphz7 vegeta Requests      [total, rate, throughput]         10038, 1000.03, 989.96
+load-test-nphz7 vegeta Duration      [total, attack, wait]             10.14s, 10.038s, 102.113ms
+load-test-nphz7 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.763ms, 102.131ms, 101.828ms, 102.431ms, 102.755ms, 113.638ms, 133.592ms
+load-test-nphz7 vegeta Bytes In      [total, mean]                     311178, 31.00
+load-test-nphz7 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-nphz7 vegeta Success       [ratio]                           100.00%
+load-test-nphz7 vegeta Status Codes  [code:count]                      200:10038
+load-test-nphz7 vegeta Error Set:
+load-test-nphz7 vegeta Requests      [total, rate, throughput]         20039, 1000.05, 995.00
+load-test-nphz7 vegeta Duration      [total, attack, wait]             20.14s, 20.038s, 101.74ms
+load-test-nphz7 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.748ms, 101.982ms, 101.815ms, 102.385ms, 102.546ms, 107.452ms, 133.592ms
+load-test-nphz7 vegeta Bytes In      [total, mean]                     621209, 31.00
+load-test-nphz7 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-nphz7 vegeta Success       [ratio]                           100.00%
+load-test-nphz7 vegeta Status Codes  [code:count]                      200:20039
+load-test-nphz7 vegeta Error Set:
+load-test-nphz7 vegeta Requests      [total, rate, throughput]         30038, 1000.03, 996.64
+load-test-nphz7 vegeta Duration      [total, attack, wait]             30.139s, 30.037s, 102.227ms
+load-test-nphz7 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.748ms, 101.952ms, 101.808ms, 102.376ms, 102.521ms, 106.795ms, 133.592ms
+load-test-nphz7 vegeta Bytes In      [total, mean]                     931178, 31.00
+load-test-nphz7 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-nphz7 vegeta Success       [ratio]                           100.00%
+load-test-nphz7 vegeta Status Codes  [code:count]                      200:30038
+load-test-nphz7 vegeta Error Set:
+load-test-nphz7 vegeta Requests      [total, rate, throughput]         40032, 1000.02, 997.50
+load-test-nphz7 vegeta Duration      [total, attack, wait]             40.132s, 40.031s, 101.245ms
+load-test-nphz7 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.748ms, 101.919ms, 101.802ms, 102.368ms, 102.501ms, 105.706ms, 133.592ms
+load-test-nphz7 vegeta Bytes In      [total, mean]                     1240992, 31.00
+load-test-nphz7 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-nphz7 vegeta Success       [ratio]                           100.00%
+load-test-nphz7 vegeta Status Codes  [code:count]                      200:40032
+load-test-nphz7 vegeta Error Set:
+load-test-nphz7 vegeta Requests      [total, rate, throughput]         50037, 1000.00, 997.97
+load-test-nphz7 vegeta Duration      [total, attack, wait]             50.139s, 50.037s, 101.692ms
+load-test-nphz7 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.74ms, 101.907ms, 101.801ms, 102.364ms, 102.491ms, 105.192ms, 133.592ms
+load-test-nphz7 vegeta Bytes In      [total, mean]                     1551147, 31.00
+load-test-nphz7 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-nphz7 vegeta Success       [ratio]                           100.00%
+load-test-nphz7 vegeta Status Codes  [code:count]                      200:50037
+load-test-nphz7 vegeta Error Set:
+load-test-nphz7 vegeta Requests      [total, rate, throughput]         60000, 1000.02, 998.33
+load-test-nphz7 vegeta Duration      [total, attack, wait]             1m0s, 59.999s, 101.273ms
+load-test-nphz7 vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.74ms, 101.898ms, 101.798ms, 102.36ms, 102.487ms, 104.847ms, 133.592ms
+load-test-nphz7 vegeta Bytes In      [total, mean]                     1860000, 31.00
+load-test-nphz7 vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-nphz7 vegeta Success       [ratio]                           100.00%
+load-test-nphz7 vegeta Status Codes  [code:count]                      200:60000
+load-test-nphz7 vegeta Error Set:
+Stream closed EOF for demo/load-test-nphz7 (vegeta)
+load-test-w7djg vegeta Requests      [total, rate, throughput]         10037, 1000.04, 989.98
+load-test-w7djg vegeta Duration      [total, attack, wait]             10.139s, 10.037s, 101.944ms
+load-test-w7djg vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.768ms, 102.107ms, 101.631ms, 102.207ms, 102.47ms, 122.121ms, 140.246ms
+load-test-w7djg vegeta Bytes In      [total, mean]                     311147, 31.00
+load-test-w7djg vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-w7djg vegeta Success       [ratio]                           100.00%
+load-test-w7djg vegeta Status Codes  [code:count]                      200:10037
+load-test-w7djg vegeta Error Set:
+load-test-w7djg vegeta Requests      [total, rate, throughput]         20037, 1000.05, 994.98
+load-test-w7djg vegeta Duration      [total, attack, wait]             20.138s, 20.036s, 102.132ms
+load-test-w7djg vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.754ms, 101.87ms, 101.617ms, 102.155ms, 102.323ms, 110.68ms, 140.246ms
+load-test-w7djg vegeta Bytes In      [total, mean]                     621147, 31.00
+load-test-w7djg vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-w7djg vegeta Success       [ratio]                           100.00%
+load-test-w7djg vegeta Status Codes  [code:count]                      200:20037
+load-test-w7djg vegeta Error Set:
+load-test-w7djg vegeta Requests      [total, rate, throughput]         30038, 1000.04, 996.66
+load-test-w7djg vegeta Duration      [total, attack, wait]             30.139s, 30.037s, 101.874ms
+load-test-w7djg vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.754ms, 101.816ms, 101.616ms, 102.148ms, 102.309ms, 107.543ms, 140.246ms
+load-test-w7djg vegeta Bytes In      [total, mean]                     931178, 31.00
+load-test-w7djg vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-w7djg vegeta Success       [ratio]                           100.00%
+load-test-w7djg vegeta Status Codes  [code:count]                      200:30038
+load-test-w7djg vegeta Error Set:
+load-test-w7djg vegeta Requests      [total, rate, throughput]         40038, 1000.02, 997.48
+load-test-w7djg vegeta Duration      [total, attack, wait]             40.139s, 40.037s, 101.97ms
+load-test-w7djg vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.754ms, 101.765ms, 101.609ms, 102.133ms, 102.287ms, 105.576ms, 140.246ms
+load-test-w7djg vegeta Bytes In      [total, mean]                     1241178, 31.00
+load-test-w7djg vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-w7djg vegeta Success       [ratio]                           100.00%
+load-test-w7djg vegeta Status Codes  [code:count]                      200:40038
+load-test-w7djg vegeta Error Set:
+load-test-w7djg vegeta Requests      [total, rate, throughput]         50038, 1000.01, 997.98
+load-test-w7djg vegeta Duration      [total, attack, wait]             50.139s, 50.037s, 101.95ms
+load-test-w7djg vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.754ms, 101.75ms, 101.604ms, 102.128ms, 102.282ms, 105.392ms, 140.246ms
+load-test-w7djg vegeta Bytes In      [total, mean]                     1551178, 31.00
+load-test-w7djg vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-w7djg vegeta Success       [ratio]                           100.00%
+load-test-w7djg vegeta Status Codes  [code:count]                      200:50038
+load-test-w7djg vegeta Error Set:
+load-test-w7djg vegeta Requests      [total, rate, throughput]         60000, 1000.02, 998.31
+load-test-w7djg vegeta Duration      [total, attack, wait]             1m0s, 59.999s, 102.229ms
+load-test-w7djg vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.753ms, 101.73ms, 101.602ms, 102.123ms, 102.275ms, 104.641ms, 140.246ms
+load-test-w7djg vegeta Bytes In      [total, mean]                     1860000, 31.00
+load-test-w7djg vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-w7djg vegeta Success       [ratio]                           100.00%
+load-test-w7djg vegeta Status Codes  [code:count]                      200:60000
+load-test-w7djg vegeta Error Set:
+Stream closed EOF for demo/load-test-w7djg (vegeta)
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.087420Z    info    xdsproxy    connected to upstream XDS server: istiod-basic.istio-system.svc:15012
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.088030Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.091699Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.103221Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.103242Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.103734Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.105894Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.105969Z    debug    ads    Unauthenticated XDS: @
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.106140Z    debug    ads    Unauthenticated XDS: @
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.107153Z    info    ads    ADS: new connection for node:load-test-w7djg.demo-1
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.107168Z    debug    ads    ADS:SDS: REQ load-test-w7djg.demo-1 resources:1 nonce: version:
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.107171Z    debug    ads    ADS:SDS: INIT/RECONNECT load-test-w7djg.demo-1
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.107177Z    debug    cache    generate secret "ROOTCA"
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.107208Z    info    ads    ADS: new connection for node:load-test-w7djg.demo-2
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.107218Z    debug    ads    ADS:SDS: REQ load-test-w7djg.demo-2 resources:1 nonce: version:
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.107221Z    debug    ads    ADS:SDS: INIT/RECONNECT load-test-w7djg.demo-2
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.107226Z    debug    cache    generate secret "default"
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.175867Z    info    cache    generated new workload certificate    latency=146.882905ms ttl=23h59m59.82414021s
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.175886Z    debug    cache    scheduled certificate for rotation in 11h59m59.912059861s    resource=default
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.175892Z    info    cache    Root cert has changed, start rotating root cert
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.175904Z    info    ads    XDS: Incremental Pushing:0 ConnectedEndpoints:2 Version:
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.175912Z    debug    cache    output the resource to     resource=default
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.175916Z    debug    cache    generate secret "ROOTCA"
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.175943Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.824059073s
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.175970Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.175971Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.824034477s
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.175986Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.176065Z    info    cache    returned workload certificate from cache    ttl=23h59m59.823938103s
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.176074Z    debug    cache    output the resource to     resource=default
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.176196Z    info    ads    SDS: PUSH request for node:load-test-w7djg.demo resources:1 size:4.0kB resource:default nonce:1a10b8ec-e898-487e-8ced-85e80fb22e98 version:
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.176211Z    debug    ads    Skipping push to load-test-w7djg.demo-2, no updates required
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.176223Z    info    ads    SDS: PUSH request for node:load-test-w7djg.demo resources:1 size:1.1kB resource:ROOTCA nonce:5392a01f-97b9-4ae5-9fec-c7ba1b1aab35 version:
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.176246Z    debug    cache    generate secret "ROOTCA"
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.176283Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.823719912s
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.176290Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.176309Z    debug    ads    SDS: PUSH for node:load-test-w7djg.demo resources:1 size:1.1kB resource:ROOTCA
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.182907Z    debug    ads    ADS:SDS: REQ load-test-w7djg.demo-1 resources:1 nonce:5392a01f-97b9-4ae5-9fec-c7ba1b1aab35 version:
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.182915Z    debug    ads    ADS:SDS: REQ load-test-w7djg.demo-2 resources:1 nonce:1a10b8ec-e898-487e-8ced-85e80fb22e98 version:
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.182916Z    debug    ads    ADS:SDS: REQ load-test-w7djg.demo-1 Expired nonce received 5392a01f-97b9-4ae5-9fec-c7ba1b1aab35, sent d6bd6293-941f-4a03-89a4-53a3298dad15
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.182924Z    debug    ads    ADS:SDS: ACK load-test-w7djg.demo-2  1a10b8ec-e898-487e-8ced-85e80fb22e98
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.182967Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.182980Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.182985Z    debug    xdsproxy    request for type url type.googleapis.com/maistra.security.v1.TrustBundleResponse
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.183020Z    debug    ads    ADS:SDS: REQ load-test-w7djg.demo-1 resources:1 nonce:d6bd6293-941f-4a03-89a4-53a3298dad15 version:
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.183032Z    debug    ads    ADS:SDS: ACK load-test-w7djg.demo-1  d6bd6293-941f-4a03-89a4-53a3298dad15
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.184764Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.184790Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.184959Z    debug    dns    updated lookup table with 67 hosts
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.184972Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.207290Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.207312Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.207798Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.211438Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.578703Z    info    Readiness succeeded in 593.343109ms
+load-test-w7djg istio-proxy 2023-09-12T10:46:28.578997Z    info    Envoy proxy is ready
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.233035Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 1873
+load-test-w7djg istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-w7djg istio-proxy
+load-test-w7djg istio-proxy ;; OPT PSEUDOSECTION:
+load-test-w7djg istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-w7djg istio-proxy
+load-test-w7djg istio-proxy ;; QUESTION SECTION:
+load-test-w7djg istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-w7djg istio-proxy     protocol=udp edns=true id=91eddcf4-d379-42da-80a6-649f05a1a9c5
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.233043Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 21511
+load-test-w7djg istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-w7djg istio-proxy
+load-test-w7djg istio-proxy ;; OPT PSEUDOSECTION:
+load-test-w7djg istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-w7djg istio-proxy
+load-test-w7djg istio-proxy ;; QUESTION SECTION:
+load-test-w7djg istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-w7djg istio-proxy     protocol=udp edns=true id=fb630e0f-891c-4e5b-b1f3-1a748840f906
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.233068Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 1873
+load-test-w7djg istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+load-test-w7djg istio-proxy
+load-test-w7djg istio-proxy ;; QUESTION SECTION:
+load-test-w7djg istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-w7djg istio-proxy     protocol=udp edns=true id=91eddcf4-d379-42da-80a6-649f05a1a9c5
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.233085Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 21511
+load-test-w7djg istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+load-test-w7djg istio-proxy
+load-test-w7djg istio-proxy ;; QUESTION SECTION:
+load-test-w7djg istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-w7djg istio-proxy
+load-test-w7djg istio-proxy ;; ANSWER SECTION:
+load-test-w7djg istio-proxy backend.demo.svc.cluster.local.demo.svc.cluster.local.    30    IN    CNAME    backend.demo.svc.cluster.local.
+load-test-w7djg istio-proxy backend.demo.svc.cluster.local.    30    IN    A    172.30.180.70
+load-test-w7djg istio-proxy     protocol=udp edns=true id=fb630e0f-891c-4e5b-b1f3-1a748840f906
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.779146Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.779184Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.783368Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.783396Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.783442Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.783478Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.783522Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.783679Z    debug    dns    updated lookup table with 67 hosts
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.783691Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.786696Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-w7djg istio-proxy 2023-09-12T10:46:34.786715Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.694517Z    info    starting Http service at 127.0.0.1:15004
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.695217Z    info    Pilot SAN: [istiod-basic.istio-system.svc]
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.695260Z    debug    Add file var/run/secrets/istio/root-cert.pem watcher
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.696380Z    info    Starting proxy agent
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.696390Z    info    starting
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.696402Z    info    Envoy command: [-c etc/istio/proxy/envoy-rev.json --drain-time-s 45 --drain-strategy immediate --parent-shutdown-time-s 60 --local-address-ip-version v4 --file-flush-interval-msec 1000 --disable-hot-restart --log-format %Y-%m-%dT%T.%fZ    %l    envoy %n    %v -l warning --component-log-level misc:error --concurrency 2]
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.746030Z    debug    xdsproxy    accepted XDS connection from Envoy, forwarding to upstream XDS server
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.751013Z    info    xdsproxy    connected to upstream XDS server: istiod-basic.istio-system.svc:15012
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.751829Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.755733Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.767383Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.767404Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.768112Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.769749Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.769842Z    debug    ads    Unauthenticated XDS: @
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.769865Z    debug    ads    Unauthenticated XDS: @
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770390Z    info    cache    generated new workload certificate    latency=77.438296ms ttl=23h59m59.229616904s
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770409Z    debug    cache    scheduled certificate for rotation in 11h59m59.61479905s    resource=default
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770414Z    info    cache    Root cert has changed, start rotating root cert
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770425Z    info    ads    XDS: Incremental Pushing:0 ConnectedEndpoints:0 Version:
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770431Z    debug    cache    output the resource to     resource=default
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770436Z    debug    cache    generate secret "ROOTCA"
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770477Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.229524702s
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770482Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770659Z    info    ads    ADS: new connection for node:load-test-9g4wt.demo-1
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770676Z    debug    ads    ADS:SDS: REQ load-test-9g4wt.demo-1 resources:1 nonce: version:
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770681Z    debug    ads    ADS:SDS: INIT/RECONNECT load-test-9g4wt.demo-1
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770687Z    debug    cache    generate secret "ROOTCA"
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770747Z    info    ads    ADS: new connection for node:load-test-9g4wt.demo-2
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770751Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.229252225s
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770760Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770760Z    debug    ads    ADS:SDS: REQ load-test-9g4wt.demo-2 resources:1 nonce: version:
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770830Z    debug    ads    ADS:SDS: INIT/RECONNECT load-test-9g4wt.demo-2
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770835Z    debug    cache    generate secret "default"
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770854Z    info    cache    returned workload certificate from cache    ttl=23h59m59.229148758s
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770858Z    debug    cache    output the resource to     resource=default
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770941Z    info    ads    SDS: PUSH request for node:load-test-9g4wt.demo resources:1 size:4.0kB resource:default nonce:03b56e06-cda8-4597-b941-b6845480900e version:
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.770942Z    info    ads    SDS: PUSH request for node:load-test-9g4wt.demo resources:1 size:1.1kB resource:ROOTCA nonce:bb5efb61-036c-455c-b88a-a8445c176da3 version:
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.777686Z    debug    ads    ADS:SDS: REQ load-test-9g4wt.demo-1 resources:1 nonce:bb5efb61-036c-455c-b88a-a8445c176da3 version:
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.777706Z    debug    ads    ADS:SDS: ACK load-test-9g4wt.demo-1  bb5efb61-036c-455c-b88a-a8445c176da3
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.777693Z    debug    ads    ADS:SDS: REQ load-test-9g4wt.demo-2 resources:1 nonce:03b56e06-cda8-4597-b941-b6845480900e version:
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.777718Z    debug    ads    ADS:SDS: ACK load-test-9g4wt.demo-2  03b56e06-cda8-4597-b941-b6845480900e
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.777690Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.777735Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.777741Z    debug    xdsproxy    request for type url type.googleapis.com/maistra.security.v1.TrustBundleResponse
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.779863Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.779896Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.780076Z    debug    dns    updated lookup table with 67 hosts
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.780089Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.803158Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.803180Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.804025Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-9g4wt istio-proxy 2023-09-12T10:46:27.808199Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-9g4wt istio-proxy 2023-09-12T10:46:28.254051Z    info    Readiness succeeded in 606.309605ms
+load-test-9g4wt istio-proxy 2023-09-12T10:46:28.254321Z    info    Envoy proxy is ready
+load-test-9g4wt istio-proxy 2023-09-12T10:46:33.491670Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 19279
+load-test-9g4wt istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-9g4wt istio-proxy
+load-test-9g4wt istio-proxy ;; OPT PSEUDOSECTION:
+load-test-9g4wt istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-9g4wt istio-proxy
+load-test-9g4wt istio-proxy ;; QUESTION SECTION:
+load-test-9g4wt istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-9g4wt istio-proxy     protocol=udp edns=true id=472b1b5b-bc90-43bf-ba9b-7bddbf8997a1
+load-test-9g4wt istio-proxy 2023-09-12T10:46:33.491713Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 19279
+load-test-9g4wt istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+load-test-9g4wt istio-proxy
+load-test-9g4wt istio-proxy ;; QUESTION SECTION:
+load-test-9g4wt istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-9g4wt istio-proxy
+load-test-9g4wt istio-proxy ;; ANSWER SECTION:
+load-test-9g4wt istio-proxy backend.demo.svc.cluster.local.demo.svc.cluster.local.    30    IN    CNAME    backend.demo.svc.cluster.local.
+load-test-9g4wt istio-proxy backend.demo.svc.cluster.local.    30    IN    A    172.30.180.70
+load-test-9g4wt istio-proxy     protocol=udp edns=true id=472b1b5b-bc90-43bf-ba9b-7bddbf8997a1
+load-test-9g4wt istio-proxy 2023-09-12T10:46:33.491685Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 65253
+load-test-9g4wt istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-9g4wt istio-proxy
+load-test-9g4wt istio-proxy ;; OPT PSEUDOSECTION:
+load-test-9g4wt istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-9g4wt istio-proxy
+load-test-9g4wt istio-proxy ;; QUESTION SECTION:
+load-test-9g4wt istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-9g4wt istio-proxy     protocol=udp edns=true id=2002bcb0-7024-4606-82be-b536a9104d2c
+load-test-9g4wt istio-proxy 2023-09-12T10:46:33.491763Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 65253
+load-test-9g4wt istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+load-test-9g4wt istio-proxy
+load-test-9g4wt istio-proxy ;; QUESTION SECTION:
+load-test-9g4wt istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-9g4wt istio-proxy     protocol=udp edns=true id=2002bcb0-7024-4606-82be-b536a9104d2c
+load-test-9g4wt istio-proxy 2023-09-12T10:46:34.203937Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-9g4wt istio-proxy 2023-09-12T10:46:34.203977Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-9g4wt istio-proxy 2023-09-12T10:46:34.205527Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-9g4wt istio-proxy 2023-09-12T10:46:34.205574Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-9g4wt istio-proxy 2023-09-12T10:46:34.205585Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-9g4wt istio-proxy 2023-09-12T10:46:34.205692Z    debug    dns    updated lookup table with 67 hosts
+load-test-9g4wt istio-proxy 2023-09-12T10:46:34.205707Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-9g4wt istio-proxy 2023-09-12T10:46:34.208312Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-9g4wt istio-proxy 2023-09-12T10:46:34.208330Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-9g4wt istio-proxy 2023-09-12T10:46:34.211834Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-9g4wt istio-proxy 2023-09-12T10:46:34.211854Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-9g4wt vegeta Requests      [total, rate, throughput]         10042, 1000.09, 990.04
+load-test-9g4wt vegeta Duration      [total, attack, wait]             10.143s, 10.041s, 101.851ms
+load-test-9g4wt vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.732ms, 102.1ms, 101.654ms, 102.216ms, 102.54ms, 119.722ms, 141.417ms
+load-test-9g4wt vegeta Bytes In      [total, mean]                     311302, 31.00
+load-test-9g4wt vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-9g4wt vegeta Success       [ratio]                           100.00%
+load-test-9g4wt vegeta Status Codes  [code:count]                      200:10042
+load-test-9g4wt vegeta Error Set:
+load-test-9g4wt vegeta Requests      [total, rate, throughput]         20043, 1000.02, 994.99
+load-test-9g4wt vegeta Duration      [total, attack, wait]             20.144s, 20.043s, 101.461ms
+load-test-9g4wt vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.704ms, 101.881ms, 101.639ms, 102.174ms, 102.322ms, 109.024ms, 141.417ms
+load-test-9g4wt vegeta Bytes In      [total, mean]                     621333, 31.00
+load-test-9g4wt vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-9g4wt vegeta Success       [ratio]                           100.00%
+load-test-9g4wt vegeta Status Codes  [code:count]                      200:20043
+load-test-9g4wt vegeta Error Set:
+load-test-9g4wt vegeta Requests      [total, rate, throughput]         30036, 1000.04, 996.65
+load-test-9g4wt vegeta Duration      [total, attack, wait]             30.137s, 30.035s, 102.018ms
+load-test-9g4wt vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.704ms, 101.832ms, 101.641ms, 102.168ms, 102.304ms, 106.977ms, 141.417ms
+load-test-9g4wt vegeta Bytes In      [total, mean]                     931116, 31.00
+load-test-9g4wt vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-9g4wt vegeta Success       [ratio]                           100.00%
+load-test-9g4wt vegeta Status Codes  [code:count]                      200:30036
+load-test-9g4wt vegeta Error Set:
+load-test-9g4wt vegeta Requests      [total, rate, throughput]         40036, 1000.01, 997.47
+load-test-9g4wt vegeta Duration      [total, attack, wait]             40.138s, 40.036s, 101.877ms
+load-test-9g4wt vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.704ms, 101.787ms, 101.637ms, 102.16ms, 102.283ms, 105.471ms, 141.417ms
+load-test-9g4wt vegeta Bytes In      [total, mean]                     1241116, 31.00
+load-test-9g4wt vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-9g4wt vegeta Success       [ratio]                           100.00%
+load-test-9g4wt vegeta Status Codes  [code:count]                      200:40036
+load-test-9g4wt vegeta Error Set:
+load-test-9g4wt vegeta Requests      [total, rate, throughput]         50043, 1000.01, 997.99
+load-test-9g4wt vegeta Duration      [total, attack, wait]             50.144s, 50.042s, 101.171ms
+load-test-9g4wt vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.704ms, 101.777ms, 101.636ms, 102.159ms, 102.281ms, 105.265ms, 141.417ms
+load-test-9g4wt vegeta Bytes In      [total, mean]                     1551333, 31.00
+load-test-9g4wt vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-9g4wt vegeta Success       [ratio]                           100.00%
+load-test-9g4wt vegeta Status Codes  [code:count]                      200:50043
+load-test-9g4wt vegeta Error Set:
+load-test-9g4wt vegeta Requests      [total, rate, throughput]         60000, 1000.01, 998.31
+load-test-9g4wt vegeta Duration      [total, attack, wait]             1m0s, 1m0s, 102.175ms
+load-test-9g4wt vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.695ms, 101.757ms, 101.635ms, 102.156ms, 102.275ms, 104.583ms, 141.417ms
+load-test-9g4wt vegeta Bytes In      [total, mean]                     1860000, 31.00
+load-test-9g4wt vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-9g4wt vegeta Success       [ratio]                           100.00%
+load-test-9g4wt vegeta Status Codes  [code:count]                      200:60000
+load-test-9g4wt vegeta Error Set:
+Stream closed EOF for demo/load-test-9g4wt (vegeta)
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.224412Z    info    xdsproxy    connected to upstream XDS server: istiod-basic.istio-system.svc:15012
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.225177Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.228992Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.247936Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.247970Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.248922Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.253949Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.253982Z    debug    ads    Unauthenticated XDS: @
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.254012Z    debug    ads    Unauthenticated XDS: @
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.254774Z    info    ads    ADS: new connection for node:load-test-vsj5g.demo-1
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.254790Z    debug    ads    ADS:SDS: REQ load-test-vsj5g.demo-1 resources:1 nonce: version:
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.254794Z    debug    ads    ADS:SDS: INIT/RECONNECT load-test-vsj5g.demo-1
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.254802Z    debug    cache    generate secret "ROOTCA"
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.255037Z    info    ads    ADS: new connection for node:load-test-vsj5g.demo-2
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.255054Z    debug    ads    ADS:SDS: REQ load-test-vsj5g.demo-2 resources:1 nonce: version:
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.255061Z    debug    ads    ADS:SDS: INIT/RECONNECT load-test-vsj5g.demo-2
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.255068Z    debug    cache    generate secret "default"
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.291874Z    info    cache    generated new workload certificate    latency=119.841541ms ttl=23h59m59.708136287s
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.291901Z    debug    cache    scheduled certificate for rotation in 11h59m59.854052953s    resource=default
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.291907Z    info    cache    Root cert has changed, start rotating root cert
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.291919Z    info    ads    XDS: Incremental Pushing:0 ConnectedEndpoints:2 Version:
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.291927Z    debug    cache    output the resource to     resource=default
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.291931Z    debug    cache    generate secret "ROOTCA"
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.291959Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.708041758s
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.291967Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.292000Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.708001591s
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.292008Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.292079Z    info    cache    returned workload certificate from cache    ttl=23h59m59.707927642s
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.292093Z    debug    cache    output the resource to     resource=default
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.292227Z    info    ads    SDS: PUSH request for node:load-test-vsj5g.demo resources:1 size:1.1kB resource:ROOTCA nonce:c13f4d60-83a6-401e-8149-ef9f77e72427 version:
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.292267Z    debug    cache    generate secret "ROOTCA"
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.292297Z    info    cache    returned workload trust anchor from cache    ttl=23h59m59.707704587s
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.292305Z    debug    cache    output the resource to     resource=ROOTCA
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.292328Z    debug    ads    SDS: PUSH for node:load-test-vsj5g.demo resources:1 size:1.1kB resource:ROOTCA
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.292353Z    info    ads    SDS: PUSH request for node:load-test-vsj5g.demo resources:1 size:4.0kB resource:default nonce:3f8a0673-e035-4195-a627-816d40649fd0 version:
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.292365Z    debug    ads    Skipping push to load-test-vsj5g.demo-2, no updates required
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.292709Z    debug    ads    ADS:SDS: REQ load-test-vsj5g.demo-1 resources:1 nonce:c13f4d60-83a6-401e-8149-ef9f77e72427 version:
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.292718Z    debug    ads    ADS:SDS: REQ load-test-vsj5g.demo-1 Expired nonce received c13f4d60-83a6-401e-8149-ef9f77e72427, sent dccd6e73-a3a5-4b6e-8e2d-f77594bb8260
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.299231Z    debug    ads    ADS:SDS: REQ load-test-vsj5g.demo-2 resources:1 nonce:3f8a0673-e035-4195-a627-816d40649fd0 version:
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.299264Z    debug    ads    ADS:SDS: ACK load-test-vsj5g.demo-2  3f8a0673-e035-4195-a627-816d40649fd0
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.299234Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.299281Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.299285Z    debug    xdsproxy    request for type url type.googleapis.com/maistra.security.v1.TrustBundleResponse
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.299284Z    debug    ads    ADS:SDS: REQ load-test-vsj5g.demo-1 resources:1 nonce:dccd6e73-a3a5-4b6e-8e2d-f77594bb8260 version:
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.299302Z    debug    ads    ADS:SDS: ACK load-test-vsj5g.demo-1  dccd6e73-a3a5-4b6e-8e2d-f77594bb8260
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.301487Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.301552Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.301733Z    debug    dns    updated lookup table with 67 hosts
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.301746Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.325464Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.325496Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.326332Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.330410Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.751610Z    info    Readiness succeeded in 619.071082ms
+load-test-vsj5g istio-proxy 2023-09-12T10:46:28.751905Z    info    Envoy proxy is ready
+load-test-vsj5g istio-proxy 2023-09-12T10:46:33.994791Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 62966
+load-test-vsj5g istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-vsj5g istio-proxy
+load-test-vsj5g istio-proxy ;; OPT PSEUDOSECTION:
+load-test-vsj5g istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-vsj5g istio-proxy
+load-test-vsj5g istio-proxy ;; QUESTION SECTION:
+load-test-vsj5g istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-vsj5g istio-proxy     protocol=udp edns=true id=33bc221a-5731-4e8b-90be-b11e9da715a8
+load-test-vsj5g istio-proxy 2023-09-12T10:46:33.994832Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 62966
+load-test-vsj5g istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+load-test-vsj5g istio-proxy
+load-test-vsj5g istio-proxy ;; QUESTION SECTION:
+load-test-vsj5g istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     AAAA
+load-test-vsj5g istio-proxy     protocol=udp edns=true id=33bc221a-5731-4e8b-90be-b11e9da715a8
+load-test-vsj5g istio-proxy 2023-09-12T10:46:33.994791Z    debug    dns    request ;; opcode: QUERY, status: NOERROR, id: 2017
+load-test-vsj5g istio-proxy ;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+load-test-vsj5g istio-proxy
+load-test-vsj5g istio-proxy ;; OPT PSEUDOSECTION:
+load-test-vsj5g istio-proxy ; EDNS: version 0; flags: ; udp: 1232
+load-test-vsj5g istio-proxy
+load-test-vsj5g istio-proxy ;; QUESTION SECTION:
+load-test-vsj5g istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-vsj5g istio-proxy     protocol=udp edns=true id=4ed21d3e-9509-45b5-a527-2d1a2ce4699a
+load-test-vsj5g istio-proxy 2023-09-12T10:46:33.994906Z    debug    dns    response for hostname "backend.demo.svc.cluster.local.demo.svc.cluster.local." (found=true): ;; opcode: QUERY, status: NOERROR, id: 2017
+load-test-vsj5g istio-proxy ;; flags: qr aa rd; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+load-test-vsj5g istio-proxy
+load-test-vsj5g istio-proxy ;; QUESTION SECTION:
+load-test-vsj5g istio-proxy ;backend.demo.svc.cluster.local.demo.svc.cluster.local.    IN     A
+load-test-vsj5g istio-proxy
+load-test-vsj5g istio-proxy ;; ANSWER SECTION:
+load-test-vsj5g istio-proxy backend.demo.svc.cluster.local.demo.svc.cluster.local.    30    IN    CNAME    backend.demo.svc.cluster.local.
+load-test-vsj5g istio-proxy backend.demo.svc.cluster.local.    30    IN    A    172.30.180.70
+load-test-vsj5g istio-proxy     protocol=udp edns=true id=4ed21d3e-9509-45b5-a527-2d1a2ce4699a
+load-test-vsj5g istio-proxy 2023-09-12T10:46:34.468515Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-vsj5g istio-proxy 2023-09-12T10:46:34.468579Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-vsj5g istio-proxy 2023-09-12T10:46:34.470474Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-vsj5g istio-proxy 2023-09-12T10:46:34.470547Z    debug    xdsproxy    response for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-vsj5g istio-proxy 2023-09-12T10:46:34.470560Z    debug    xdsproxy    response for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-vsj5g istio-proxy 2023-09-12T10:46:34.470685Z    debug    dns    updated lookup table with 67 hosts
+load-test-vsj5g istio-proxy 2023-09-12T10:46:34.470700Z    debug    xdsproxy    request for type url type.googleapis.com/istio.networking.nds.v1.NameTable
+load-test-vsj5g istio-proxy 2023-09-12T10:46:34.472796Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.cluster.v3.Cluster
+load-test-vsj5g istio-proxy 2023-09-12T10:46:34.472814Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.endpoint.v3.ClusterLoadAssignment
+load-test-vsj5g istio-proxy 2023-09-12T10:46:34.476179Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.listener.v3.Listener
+load-test-vsj5g istio-proxy 2023-09-12T10:46:34.476198Z    debug    xdsproxy    request for type url type.googleapis.com/envoy.config.route.v3.RouteConfiguration
+load-test-vsj5g vegeta Requests      [total, rate, throughput]         10041, 1000.10, 990.10
+load-test-vsj5g vegeta Duration      [total, attack, wait]             10.141s, 10.04s, 101.409ms
+load-test-vsj5g vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.725ms, 102ms, 101.66ms, 102.241ms, 102.467ms, 114.087ms, 132.623ms
+load-test-vsj5g vegeta Bytes In      [total, mean]                     311271, 31.00
+load-test-vsj5g vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-vsj5g vegeta Success       [ratio]                           100.00%
+load-test-vsj5g vegeta Status Codes  [code:count]                      200:10041
+load-test-vsj5g vegeta Error Set:
+load-test-vsj5g vegeta Requests      [total, rate, throughput]         20039, 1000.05, 994.98
+load-test-vsj5g vegeta Duration      [total, attack, wait]             20.14s, 20.038s, 102.065ms
+load-test-vsj5g vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.725ms, 101.841ms, 101.654ms, 102.195ms, 102.339ms, 107.788ms, 132.623ms
+load-test-vsj5g vegeta Bytes In      [total, mean]                     621209, 31.00
+load-test-vsj5g vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-vsj5g vegeta Success       [ratio]                           100.00%
+load-test-vsj5g vegeta Status Codes  [code:count]                      200:20039
+load-test-vsj5g vegeta Error Set:
+load-test-vsj5g vegeta Requests      [total, rate, throughput]         30040, 1000.03, 996.67
+load-test-vsj5g vegeta Duration      [total, attack, wait]             30.14s, 30.039s, 101.433ms
+load-test-vsj5g vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.725ms, 101.813ms, 101.65ms, 102.185ms, 102.318ms, 106.82ms, 137.75ms
+load-test-vsj5g vegeta Bytes In      [total, mean]                     931240, 31.00
+load-test-vsj5g vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-vsj5g vegeta Success       [ratio]                           100.00%
+load-test-vsj5g vegeta Status Codes  [code:count]                      200:30040
+load-test-vsj5g vegeta Error Set:
+load-test-vsj5g vegeta Requests      [total, rate, throughput]         40040, 1000.02, 997.49
+load-test-vsj5g vegeta Duration      [total, attack, wait]             40.141s, 40.039s, 101.625ms
+load-test-vsj5g vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.725ms, 101.776ms, 101.647ms, 102.179ms, 102.303ms, 105.405ms, 137.75ms
+load-test-vsj5g vegeta Bytes In      [total, mean]                     1241240, 31.00
+load-test-vsj5g vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-vsj5g vegeta Success       [ratio]                           100.00%
+load-test-vsj5g vegeta Status Codes  [code:count]                      200:40040
+load-test-vsj5g vegeta Error Set:
+load-test-vsj5g vegeta Requests      [total, rate, throughput]         50038, 1000.01, 997.98
+load-test-vsj5g vegeta Duration      [total, attack, wait]             50.139s, 50.038s, 101.695ms
+load-test-vsj5g vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.71ms, 101.77ms, 101.646ms, 102.179ms, 102.299ms, 105.212ms, 137.75ms
+load-test-vsj5g vegeta Bytes In      [total, mean]                     1551178, 31.00
+load-test-vsj5g vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-vsj5g vegeta Success       [ratio]                           100.00%
+load-test-vsj5g vegeta Status Codes  [code:count]                      200:50038
+load-test-vsj5g vegeta Error Set:
+load-test-vsj5g vegeta Requests      [total, rate, throughput]         60000, 1000.02, 998.32
+load-test-vsj5g vegeta Duration      [total, attack, wait]             1m0s, 59.999s, 101.925ms
+load-test-vsj5g vegeta Latencies     [min, mean, 50, 90, 95, 99, max]  100.709ms, 101.754ms, 101.645ms, 102.171ms, 102.291ms, 104.569ms, 137.75ms
+load-test-vsj5g vegeta Bytes In      [total, mean]                     1860000, 31.00
+load-test-vsj5g vegeta Bytes Out     [total, mean]                     0, 0.00
+load-test-vsj5g vegeta Success       [ratio]                           100.00%
+load-test-vsj5g vegeta Status Codes  [code:count]                      200:60000
+load-test-vsj5g vegeta Error Set:
+Stream closed EOF for demo/load-test-vsj5g (vegeta)
